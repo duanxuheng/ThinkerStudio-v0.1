@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from bodyctrl_msgs/msg/MotorStatus1.msg
+// generated code does not contain a copyright notice
+
+
+module bodyctrl_msgs {
+  module msg {
+    struct MotorStatus1 {
+      @verbatim (language="comment", text=
+        "MotorName")
+      uint16 name;
+
+      float motortemperature;
+
+      float mostemperature;
+    };
+  };
+};

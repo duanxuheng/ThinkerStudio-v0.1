@@ -1,0 +1,29 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from lyre_msgs/msg/TtsEvent.msg
+// generated code does not contain a copyright notice
+
+
+module lyre_msgs {
+  module msg {
+    module TtsEvent_Constants {
+      const string TOPIC_NAME = "/audio_tts/event";
+      const int8 EVENT_STARTED = 0;
+      const int8 EVENT_COMPLETED = 1;
+      const int8 EVENT_STOPPED = 2;
+      const int8 EVENT_CANCELLED = 3;
+      const int8 EVENT_FAILED = 4;
+    };
+    @verbatim (language="comment", text=
+      "lyre_msgs/msg/TtsEvent.msg" "\n"
+      "TTS 语音合成的事件。")
+    struct TtsEvent {
+      string sid;
+
+      uint32 seq;
+
+      int8 event;
+
+      string message;
+    };
+  };
+};

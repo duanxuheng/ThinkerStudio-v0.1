@@ -1,0 +1,181 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from bodyctrl_msgs/msg/MotorStatusMsgPlate.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module bodyctrl_msgs {
+  module msg {
+    struct MotorStatusMsgPlate {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "MotorName")
+      uint16 name1;
+
+      @verbatim (language="comment", text=
+        "rad")
+      float pos1;
+
+      @verbatim (language="comment", text=
+        "rad")
+      float speed1;
+
+      float current1;
+
+      @verbatim (language="comment", text=
+        "MotorName")
+      uint16 name2;
+
+      @verbatim (language="comment", text=
+        "rad")
+      float pos2;
+
+      @verbatim (language="comment", text=
+        "rad")
+      float speed2;
+
+      float current2;
+
+      @verbatim (language="comment", text=
+        "MotorName")
+      uint16 name3;
+
+      @verbatim (language="comment", text=
+        "rad")
+      float pos3;
+
+      @verbatim (language="comment", text=
+        "rad")
+      float speed3;
+
+      float current3;
+
+      @verbatim (language="comment", text=
+        "MotorName")
+      uint16 name4;
+
+      @verbatim (language="comment", text=
+        "rad")
+      float pos4;
+
+      @verbatim (language="comment", text=
+        "rad")
+      float speed4;
+
+      float current4;
+
+      @verbatim (language="comment", text=
+        "MotorName")
+      uint16 name5;
+
+      @verbatim (language="comment", text=
+        "rad")
+      float pos5;
+
+      @verbatim (language="comment", text=
+        "rad")
+      float speed5;
+
+      float current5;
+
+      @verbatim (language="comment", text=
+        "MotorName")
+      uint16 name6;
+
+      @verbatim (language="comment", text=
+        "rad")
+      float pos6;
+
+      @verbatim (language="comment", text=
+        "rad")
+      float speed6;
+
+      float current6;
+
+      @verbatim (language="comment", text=
+        "MotorName")
+      uint16 name7;
+
+      @verbatim (language="comment", text=
+        "rad")
+      float pos7;
+
+      @verbatim (language="comment", text=
+        "rad")
+      float speed7;
+
+      float current7;
+
+      @verbatim (language="comment", text=
+        "MotorName")
+      uint16 name8;
+
+      @verbatim (language="comment", text=
+        "rad")
+      float pos8;
+
+      @verbatim (language="comment", text=
+        "rad")
+      float speed8;
+
+      float current8;
+
+      @verbatim (language="comment", text=
+        "MotorName")
+      uint16 name9;
+
+      @verbatim (language="comment", text=
+        "rad")
+      float pos9;
+
+      @verbatim (language="comment", text=
+        "rad")
+      float speed9;
+
+      float current9;
+
+      @verbatim (language="comment", text=
+        "MotorName")
+      uint16 name10;
+
+      @verbatim (language="comment", text=
+        "rad")
+      float pos10;
+
+      @verbatim (language="comment", text=
+        "rad")
+      float speed10;
+
+      float current10;
+
+      @verbatim (language="comment", text=
+        "MotorName")
+      uint16 name11;
+
+      @verbatim (language="comment", text=
+        "rad")
+      float pos11;
+
+      @verbatim (language="comment", text=
+        "rad")
+      float speed11;
+
+      float current11;
+
+      @verbatim (language="comment", text=
+        "MotorName")
+      uint16 name12;
+
+      @verbatim (language="comment", text=
+        "rad")
+      float pos12;
+
+      @verbatim (language="comment", text=
+        "rad")
+      float speed12;
+
+      float current12;
+    };
+  };
+};

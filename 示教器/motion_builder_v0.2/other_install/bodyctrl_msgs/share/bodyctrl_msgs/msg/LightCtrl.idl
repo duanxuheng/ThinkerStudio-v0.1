@@ -1,0 +1,119 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from bodyctrl_msgs/msg/LightCtrl.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module bodyctrl_msgs {
+  module msg {
+    module LightCtrl_Constants {
+      const string TOPIC_NAME = "/xsys/light/ctrl";
+      @verbatim (language="comment", text=
+        "系统" "\n"        "关机中")
+      const int32 CMD_SYSTEM_SHUTTING = 0;
+      @verbatim (language="comment", text=
+        "故障")
+      const int32 CMD_SYSTEM_ERROR_OCCUR = 10;
+      @verbatim (language="comment", text=
+        "故障消除")
+      const int32 CMD_SYSTEM_ERROR_CLEAR = 11;
+      @verbatim (language="comment", text=
+        "告警")
+      const int32 CMD_SYSTEM_WARN_OCCUR = 12;
+      @verbatim (language="comment", text=
+        "告警消除")
+      const int32 CMD_SYSTEM_WARN_CLEAR = 13;
+      @verbatim (language="comment", text=
+        "服务等待中")
+      const int32 CMD_SYSTEM_SERVICE_WAIT = 20;
+      @verbatim (language="comment", text=
+        "服务启动中")
+      const int32 CMD_SYSTEM_SERVICE_START = 21;
+      @verbatim (language="comment", text=
+        "服务就绪")
+      const int32 CMD_SYSTEM_SERVICE_READY = 22;
+      @verbatim (language="comment", text=
+        "服务启动失败")
+      const int32 CMD_SYSTEM_SERVICE_FAILED = 23;
+      @verbatim (language="comment", text=
+        "系统待机")
+      const int32 CMD_SYSTEM_STANDBY = 99;
+      @verbatim (language="comment", text=
+        "基础组件" "\n"        "升级退出")
+      const int32 CMD_OTA_QUIT = 100;
+      @verbatim (language="comment", text=
+        "升级开始")
+      const int32 CMD_OTA_START = 101;
+      @verbatim (language="comment", text=
+        "电源" "\n"        "电量状态退出")
+      const int32 CMD_POWER_QUIT = 200;
+      @verbatim (language="comment", text=
+        "放电中，电量充足")
+      const int32 CMD_POWER_BATTERY_NORMAL = 201;
+      @verbatim (language="comment", text=
+        "放电中，低电量")
+      const int32 CMD_POWER_BATTERY_LOW = 202;
+      @verbatim (language="comment", text=
+        "放电中，电量危急")
+      const int32 CMD_POWER_BATTERY_CRITICAL = 203;
+      @verbatim (language="comment", text=
+        "充电中")
+      const int32 CMD_POWER_CHARGING = 210;
+      @verbatim (language="comment", text=
+        "充电中，已充满")
+      const int32 CMD_POWER_CHARGING_FULL = 211;
+      @verbatim (language="comment", text=
+        "备份电池放电中")
+      const int32 CMD_POWER_BACKUP_NORMAL = 220;
+      @verbatim (language="comment", text=
+        "交互" "\n"        "对话结束，已休眠")
+      const int32 CMD_CHAT_QUIT = 300;
+      @verbatim (language="comment", text=
+        "对话开始，已唤醒")
+      const int32 CMD_CHAT_WAKEUP = 301;
+      @verbatim (language="comment", text=
+        "拾音中")
+      const int32 CMD_CHAT_ASR = 310;
+      @verbatim (language="comment", text=
+        "推理中")
+      const int32 CMD_CHAT_LLM = 311;
+      @verbatim (language="comment", text=
+        "合成中")
+      const int32 CMD_CHAT_TTS = 312;
+      @verbatim (language="comment", text=
+        "应答播报中")
+      const int32 CMD_CHAT_PLAY = 313;
+      @verbatim (language="comment", text=
+        "断网")
+      const int32 CMD_CHAT_NET_OFFLINE = 320;
+      @verbatim (language="comment", text=
+        "网络恢复")
+      const int32 CMD_CHAT_NET_ONLINE = 321;
+      @verbatim (language="comment", text=
+        "运动" "\n"        "运动退出")
+      const int32 CMD_MOTION_QUIT = 400;
+      @verbatim (language="comment", text=
+        "奔跑中")
+      const int32 CMD_MOTION_RUNNING = 401;
+    };
+    struct LightCtrl {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "灯效定义")
+      int32 cmd;
+
+      @verbatim (language="comment", text=
+        "可选的载荷数据")
+      sequence<int8> data;
+
+      @verbatim (language="comment", text=
+        "调用方身份")
+      string caller_id;
+
+      @verbatim (language="comment", text=
+        "调用方提供的描述信息 —— 基于什么原因更新了灯效，用作日志审计目的")
+      string caller_msg;
+    };
+  };
+};

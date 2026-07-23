@@ -1,0 +1,2 @@
+[console_scripts]
+trigger_player = tienkung_action.trigger_player:main

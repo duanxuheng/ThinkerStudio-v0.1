@@ -1,0 +1,35 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from bodyctrl_msgs/msg/PowerLightCtrl.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module bodyctrl_msgs {
+  module msg {
+    module PowerLightCtrl_Constants {
+      const int32 POWER_LIGHT_BATTERY_SUPPLY = 1;
+      const int32 POWER_LIGHT_POWER_ON_START = 2;
+      const int32 POWER_LIGHT_POWER_ON_FINISH = 3;
+      const int32 POWER_LIGHT_SERVICE_START = 4;
+      const int32 POWER_LIGHT_SERVICE_FINISH = 5;
+      const int32 POWER_LIGHT_SELF_CHECK_START = 6;
+      const int32 POWER_LIGHT_SELF_CHECK_FAILED = 7;
+      const int32 POWER_LIGHT_SELF_CHECK_SUCCESS = 8;
+      const int32 POWER_LIGHT_FAULT_OCCUR = 9;
+      const int32 POWER_LIGHT_FAULT_CLEAR = 10;
+      const int32 POWER_LIGHT_VOICE_WAKEUP = 11;
+      const int32 POWER_LIGHT_VOICE_RESPONSE = 12;
+      const int32 POWER_LIGHT_VOICE_EXIT = 13;
+      const int32 POWER_LIGHT_RUNNING_START = 14;
+      const int32 POWER_LIGHT_RUNNING_FINISH = 15;
+      const int32 POWER_LIGHT_POWER_OFF = 16;
+      const int32 POWER_LIGHT_WARN_OCCUR = 17;
+      const int32 POWER_LIGHT_WARN_CLEAR = 18;
+    };
+    struct PowerLightCtrl {
+      std_msgs::msg::Header header;
+
+      int32 cmd;
+    };
+  };
+};

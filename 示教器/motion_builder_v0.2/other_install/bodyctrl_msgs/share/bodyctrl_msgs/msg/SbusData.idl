@@ -1,0 +1,64 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from bodyctrl_msgs/msg/SbusData.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module bodyctrl_msgs {
+  module msg {
+    module SbusData_Constants {
+      const int32 KEY_NONE = 0;
+      const int32 KEY_A_UP = 1;
+      const int32 KEY_A_DOWN = 2;
+      const int32 KEY_B_UP = 3;
+      const int32 KEY_B_DOWN = 4;
+      const int32 KEY_C_UP = 5;
+      const int32 KEY_C_DOWN = 6;
+      const int32 KEY_D_UP = 7;
+      const int32 KEY_D_DOWN = 8;
+      const int32 KEY_E_UP = 9;
+      const int32 KEY_E_MID = 10;
+      const int32 KEY_E_DOWN = 11;
+      const int32 KEY_F_UP = 12;
+      const int32 KEY_F_MID = 13;
+      const int32 KEY_F_DOWN = 14;
+      const int32 KEY_G_LEFT = 15;
+      const int32 KEY_G_MID = 16;
+      const int32 KEY_G_RIGHT = 17;
+      const int32 KEY_H_LEFT = 18;
+      const int32 KEY_H_MID = 19;
+      const int32 KEY_H_RIGHT = 20;
+    };
+    struct SbusData {
+      std_msgs::msg::Header header;
+
+      int32 key_event_new;
+
+      int32 key_event_old;
+
+      int8 button_a;
+
+      int8 button_b;
+
+      int8 button_c;
+
+      int8 button_d;
+
+      int8 button_e;
+
+      int8 button_f;
+
+      int8 button_g;
+
+      int8 button_h;
+
+      float x1;
+
+      float y1;
+
+      float x2;
+
+      float y2;
+    };
+  };
+};

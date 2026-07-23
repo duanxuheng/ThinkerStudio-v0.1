@@ -1,0 +1,6 @@
+setup.py
+lyre_msgs/__init__.py
+lyre_msgs.egg-info/PKG-INFO
+lyre_msgs.egg-info/SOURCES.txt
+lyre_msgs.egg-info/dependency_links.txt
+lyre_msgs.egg-info/top_level.txt

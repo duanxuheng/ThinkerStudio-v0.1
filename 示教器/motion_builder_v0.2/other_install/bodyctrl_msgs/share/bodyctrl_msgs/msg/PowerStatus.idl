@@ -1,0 +1,243 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from bodyctrl_msgs/msg/PowerStatus.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module bodyctrl_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "@brief 电源板电压、电流、电量、温度等信息")
+    struct PowerStatus {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "temperature information" "\n"
+        "腰部MOS温度")
+      float waist_temp;
+
+      @verbatim (language="comment", text=
+        "臂A MOS温度")
+      float arm_a_temp;
+
+      @verbatim (language="comment", text=
+        "臂B MOS温度")
+      float arm_b_temp;
+
+      @verbatim (language="comment", text=
+        "腿A MOS温度")
+      float leg_a_temp;
+
+      @verbatim (language="comment", text=
+        "腿B MOS温度")
+      float leg_b_temp;
+
+      @verbatim (language="comment", text=
+        "腰部MOS温度最大值")
+      float waist_temp_max;
+
+      @verbatim (language="comment", text=
+        "臂A MOS温度最大值")
+      float arm_a_temp_max;
+
+      @verbatim (language="comment", text=
+        "臂B MOS温度最大值")
+      float arm_b_temp_max;
+
+      @verbatim (language="comment", text=
+        "腿A MOS温度最大值")
+      float leg_a_temp_max;
+
+      @verbatim (language="comment", text=
+        "腿B MOS温度最大值")
+      float leg_b_temp_max;
+
+      @verbatim (language="comment", text=
+        "腰部MOS温度最小值")
+      float waist_temp_min;
+
+      @verbatim (language="comment", text=
+        "臂A MOS温度最小值")
+      float arm_a_temp_min;
+
+      @verbatim (language="comment", text=
+        "臂B MOS温度最小值")
+      float arm_b_temp_min;
+
+      @verbatim (language="comment", text=
+        "腿A MOS温度最小值")
+      float leg_a_temp_min;
+
+      @verbatim (language="comment", text=
+        "腿B MOS温度最小值")
+      float leg_b_temp_min;
+
+      @verbatim (language="comment", text=
+        "current information" "\n"
+        "臂A电流")
+      float arm_a_curr;
+
+      @verbatim (language="comment", text=
+        "臂B电流")
+      float arm_b_curr;
+
+      @verbatim (language="comment", text=
+        "腿A电流")
+      float leg_a_curr;
+
+      @verbatim (language="comment", text=
+        "腿B电流")
+      float leg_b_curr;
+
+      @verbatim (language="comment", text=
+        "腰部电流")
+      float waist_curr;
+
+      @verbatim (language="comment", text=
+        "头部电流")
+      float head_curr;
+
+      @verbatim (language="comment", text=
+        "臂A电流最大值")
+      float arm_a_curr_max;
+
+      @verbatim (language="comment", text=
+        "臂B电流最大值")
+      float arm_b_curr_max;
+
+      @verbatim (language="comment", text=
+        "腿A电流最大值")
+      float leg_a_curr_max;
+
+      @verbatim (language="comment", text=
+        "腿B电流最大值")
+      float leg_b_curr_max;
+
+      @verbatim (language="comment", text=
+        "腰部电流最大值")
+      float waist_curr_max;
+
+      @verbatim (language="comment", text=
+        "头部电流最大值")
+      float head_curr_max;
+
+      @verbatim (language="comment", text=
+        "臂A电流最小值")
+      float arm_a_curr_min;
+
+      @verbatim (language="comment", text=
+        "臂B电流最小值")
+      float arm_b_curr_min;
+
+      @verbatim (language="comment", text=
+        "腿A电流最小值")
+      float leg_a_curr_min;
+
+      @verbatim (language="comment", text=
+        "腿B电流最小值")
+      float leg_b_curr_min;
+
+      @verbatim (language="comment", text=
+        "腰部电流最小值")
+      float waist_curr_min;
+
+      @verbatim (language="comment", text=
+        "头部电流最小值")
+      float head_curr_min;
+
+      @verbatim (language="comment", text=
+        "臂A电压")
+      float arm_a_volt;
+
+      @verbatim (language="comment", text=
+        "臂B电压")
+      float arm_b_volt;
+
+      @verbatim (language="comment", text=
+        "腿A电压")
+      float leg_a_volt;
+
+      @verbatim (language="comment", text=
+        "腿B电压")
+      float leg_b_volt;
+
+      @verbatim (language="comment", text=
+        "腰部电压")
+      float waist_volt;
+
+      @verbatim (language="comment", text=
+        "母线电压")
+      float bus_volt;
+
+      @verbatim (language="comment", text=
+        "臂A电压最大值")
+      float arm_a_volt_max;
+
+      @verbatim (language="comment", text=
+        "臂B电压最大值")
+      float arm_b_volt_max;
+
+      @verbatim (language="comment", text=
+        "腿A电压最大值")
+      float leg_a_volt_max;
+
+      @verbatim (language="comment", text=
+        "腿B电压最大值")
+      float leg_b_volt_max;
+
+      @verbatim (language="comment", text=
+        "腰部电压最大值")
+      float waist_volt_max;
+
+      @verbatim (language="comment", text=
+        "母线电压最大值")
+      float bus_volt_max;
+
+      @verbatim (language="comment", text=
+        "臂A电压最小值")
+      float arm_a_volt_min;
+
+      @verbatim (language="comment", text=
+        "臂B电压最小值")
+      float arm_b_volt_min;
+
+      @verbatim (language="comment", text=
+        "腿A电压最小值")
+      float leg_a_volt_min;
+
+      @verbatim (language="comment", text=
+        "腿B电压最小值")
+      float leg_b_volt_min;
+
+      @verbatim (language="comment", text=
+        "腰部电压最小值")
+      float waist_volt_min;
+
+      @verbatim (language="comment", text=
+        "母线电压最小值")
+      float bus_volt_min;
+
+      @verbatim (language="comment", text=
+        "version information" "\n"
+        "软件版本")
+      string software_version;
+
+      @verbatim (language="comment", text=
+        "硬件版本")
+      string hardware_version;
+
+      @verbatim (language="comment", text=
+        "battery status information" "\n"
+        "电池电压信息")
+      float battery_voltage;
+
+      @verbatim (language="comment", text=
+        "电池电流信息")
+      float battery_current;
+
+      @verbatim (language="comment", text=
+        "电池电量")
+      float battery_power;
+    };
+  };
+};

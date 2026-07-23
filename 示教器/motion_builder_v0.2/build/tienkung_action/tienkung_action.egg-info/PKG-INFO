@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: tienkung_action
+Version: 0.0.1
+Summary: tienkung_action trigger player node for audio and waist actions.
+Maintainer: soom
+Maintainer-email: soom@local
+License: Apache-2.0
+Requires-Dist: setuptools
+Dynamic: license
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: requires-dist
+Dynamic: summary

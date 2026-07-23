@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>tienkung_action</name>
+  <version>0.0.1</version>
+  <description>tienkung_action trigger player node for audio and waist actions.</description>
+  <maintainer email="soom@local">soom</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <depend>rclpy</depend>
+  <depend>ament_index_python</depend>
+  <depend>std_msgs</depend>
+  <depend>bodyctrl_msgs</depend>
+  <depend>lyre_msgs</depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

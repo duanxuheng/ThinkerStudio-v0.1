@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from bodyctrl_msgs/srv/MotorInit.srv
+// generated code does not contain a copyright notice
+
+
+module bodyctrl_msgs {
+  module srv {
+    struct MotorInit_Request {
+      string name_of_net;
+    };
+    struct MotorInit_Response {
+      int32 ret;
+    };
+  };
+};

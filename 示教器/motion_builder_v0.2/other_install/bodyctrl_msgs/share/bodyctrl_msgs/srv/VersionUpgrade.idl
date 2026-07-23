@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from bodyctrl_msgs/srv/VersionUpgrade.srv
+// generated code does not contain a copyright notice
+
+
+module bodyctrl_msgs {
+  module srv {
+    struct VersionUpgrade_Request {
+      string param;
+    };
+    struct VersionUpgrade_Response {
+      string result;
+    };
+  };
+};

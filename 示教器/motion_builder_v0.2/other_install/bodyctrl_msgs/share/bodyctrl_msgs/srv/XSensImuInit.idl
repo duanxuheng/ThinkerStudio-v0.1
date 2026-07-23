@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from bodyctrl_msgs/srv/XSensImuInit.srv
+// generated code does not contain a copyright notice
+
+
+module bodyctrl_msgs {
+  module srv {
+    struct XSensImuInit_Request {
+      string dev_name;
+    };
+    struct XSensImuInit_Response {
+      boolean ret;
+    };
+  };
+};

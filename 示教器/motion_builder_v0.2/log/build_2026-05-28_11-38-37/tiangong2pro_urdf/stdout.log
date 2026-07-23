@@ -1,0 +1,127 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (0.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/yaojunqi/Desktop/motion_builder/build/tiangong2pro_urdf
+-- Install configuration: ""
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/launch
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/launch/interactive_gui.launch.py
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/launch/simulation.launch.py
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/launch/editer.launch.py
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/urdf
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/urdf/tiangong2.0_pro_with_hands.urdf
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/urdf/tiangong2.0_pro_urdf.urdf.xacro
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/urdf/tiangong2.0_pro_urdf.urdf
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/urdf/tiangong2.0_complete_with_hands.xacro
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/left_little_1.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/hip_roll_r_link.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/left_little_2.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/L_base_link.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/left_middle_2.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/camera_head_link.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/pelvis.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/right_tcp_link.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/camera_body_back_link.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/right_thumb_3.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/wrist_pitch_l_link.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/waist_yaw_link.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/left_thumb_4.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/right_ring_1.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/ankle_roll_r_link.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/hip_roll_l_link.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/left_ring_2.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/right_ring_2.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/left_index_1.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/ankle_roll_l_link.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/wrist_roll_r_link.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/right_index_2.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/knee_pitch_r_link.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/head_pitch_link.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/R_base_link.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/knee_pitch_l_link.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/right_thumb_2.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/head_yaw_link.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/right_index_1.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/shoulder_roll_r_link.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/right_little_1.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/left_thumb_1.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/left_ring_1.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/right_middle_2.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/elbow_pitch_r_link.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/shoulder_roll_l_link.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/wrist_pitch_r_link.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/ankle_pitch_l_link.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/left_middle_1.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/elbow_yaw_l_link.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/hip_pitch_r_link.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/left_tcp_link.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/right_thumb_1.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/shoulder_yaw_r_link.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/head_roll_link.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/right_thumb_4.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/left_index_2.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/left_thumb_2.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/right_little_2.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/hip_yaw_l_link.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/shoulder_pitch_l_link.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/shoulder_pitch_r_link.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/left_thumb_3.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/imu_link.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/ankle_pitch_r_link.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/camera_body_front_link.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/right_middle_1.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/elbow_yaw_r_link.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/hip_yaw_r_link.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/elbow_pitch_l_link.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/wrist_roll_l_link.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/shoulder_yaw_l_link.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/meshes/hip_pitch_l_link.STL
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/config
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/config/actions
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/config/actions/editer
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/config/actions/create
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/config/display.rviz
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/scripts
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/scripts/sim_joint_bridge.py
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/scripts/keyframe_interpolator.py
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/scripts/action_editor.py
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/scripts/interactive_gui.py
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/scripts/joint_schema.py
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/scripts/audio_service.py
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/lib/tiangong2pro_urdf/action_editor.py
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/lib/tiangong2pro_urdf/sim_joint_bridge.py
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/lib/tiangong2pro_urdf/audio_service.py
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/lib/tiangong2pro_urdf/interactive_gui.py
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/ament_index/resource_index/package_run_dependencies/tiangong2pro_urdf
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/ament_index/resource_index/parent_prefix_path/tiangong2pro_urdf
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/environment/ament_prefix_path.sh
+-- Installing: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/environment/path.sh
+-- Installing: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/environment/path.dsv
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/local_setup.bash
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/local_setup.sh
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/local_setup.zsh
+-- Installing: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/local_setup.dsv
+-- Installing: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/package.dsv
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/ament_index/resource_index/packages/tiangong2pro_urdf
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/cmake/tiangong2pro_urdfConfig.cmake
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/cmake/tiangong2pro_urdfConfig-version.cmake
+-- Up-to-date: /home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/package.xml

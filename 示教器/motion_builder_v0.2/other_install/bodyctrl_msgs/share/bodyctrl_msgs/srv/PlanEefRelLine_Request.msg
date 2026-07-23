@@ -1,0 +1,6 @@
+string arm_name # left/right
+float64 dx # in meters
+float64 dy # in meters
+float64 dz # in meters
+float64 vel_percent
+float64 acc_percent

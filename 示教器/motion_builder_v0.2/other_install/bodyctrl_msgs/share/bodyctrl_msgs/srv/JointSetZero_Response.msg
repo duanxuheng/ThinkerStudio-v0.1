@@ -1,0 +1,2 @@
+
+bool zero_accepted

@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from bodyctrl_msgs/srv/SetGestureForceCalibration.srv
+// generated code does not contain a copyright notice
+
+
+module bodyctrl_msgs {
+  module srv {
+    struct SetGestureForceCalibration_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct SetGestureForceCalibration_Response {
+      boolean calibration_accepted;
+    };
+  };
+};

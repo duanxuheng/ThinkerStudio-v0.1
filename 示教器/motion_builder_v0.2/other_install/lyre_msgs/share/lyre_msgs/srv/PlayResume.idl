@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from lyre_msgs/srv/PlayResume.srv
+// generated code does not contain a copyright notice
+
+
+module lyre_msgs {
+  module srv {
+    module PlayResume_Request_Constants {
+      const string SERVICE_NAME = "/audio_play/resume";
+    };
+    @verbatim (language="comment", text=
+      "lyre_msgs/srv/PlayResume.srv" "\n"
+      "恢复已暂停的音频播放任务。")
+    struct PlayResume_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct PlayResume_Response {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

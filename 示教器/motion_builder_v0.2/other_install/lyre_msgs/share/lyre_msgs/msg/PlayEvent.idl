@@ -1,0 +1,29 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from lyre_msgs/msg/PlayEvent.msg
+// generated code does not contain a copyright notice
+
+
+module lyre_msgs {
+  module msg {
+    module PlayEvent_Constants {
+      const string TOPIC_NAME = "/audio_play/event";
+      const int8 EVENT_STARTED = 0;
+      const int8 EVENT_COMPLETED = 1;
+      const int8 EVENT_STOPPED = 2;
+      const int8 EVENT_CANCELLED = 3;
+      const int8 EVENT_FAILED = 4;
+    };
+    @verbatim (language="comment", text=
+      "lyre_msgs/msg/PlayEvent.msg" "\n"
+      "Play 音频播放的事件。")
+    struct PlayEvent {
+      string sid;
+
+      uint32 seq;
+
+      int8 event;
+
+      string message;
+    };
+  };
+};

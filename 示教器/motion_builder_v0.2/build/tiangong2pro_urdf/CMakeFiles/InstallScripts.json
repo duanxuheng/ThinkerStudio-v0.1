@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/yaojunqi/Desktop/motion_builder/build/tiangong2pro_urdf/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

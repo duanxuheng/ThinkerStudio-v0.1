@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from bodyctrl_msgs/msg/SriName.msg
+// generated code does not contain a copyright notice
+
+
+module bodyctrl_msgs {
+  module msg {
+    module SriName_Constants {
+      const int32 SRI_LEFT = 1;
+      const int32 SRI_RIGHT = 2;
+    };
+    struct SriName {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

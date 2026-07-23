@@ -1,0 +1,5 @@
+# lyre_msgs/srv/PlayResume.srv
+# 恢复已暂停的音频播放任务。
+
+string SERVICE_NAME = /audio_play/resume
+

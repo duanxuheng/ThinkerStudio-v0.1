@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from bodyctrl_msgs/srv/SetAngleFlexible.srv
+// generated code does not contain a copyright notice
+
+
+module bodyctrl_msgs {
+  module srv {
+    struct SetAngleFlexible_Request {
+      sequence<string> name;
+
+      sequence<float> angle_ratio;
+    };
+    struct SetAngleFlexible_Response {
+      boolean angle_accepted;
+    };
+  };
+};

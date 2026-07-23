@@ -1,0 +1,88 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from bodyctrl_msgs/msg/PowerBatteryStatus.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module bodyctrl_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "@brief 电源板电压、电流、电量、温度等信息")
+    struct PowerBatteryStatus {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "battery status information" "\n"
+        "0x00都不存在，0x01小电池存在，0x02大电池存在，0x03大小电池都存在")
+      int32 battery_installed;
+
+      @verbatim (language="comment", text=
+        "0x01大电池，0x10小电池")
+      int32 battery_working;
+
+      @verbatim (language="comment", text=
+        "电池电压信息")
+      float master_battery_voltage;
+
+      @verbatim (language="comment", text=
+        "电池电流信息")
+      float master_battery_current;
+
+      @verbatim (language="comment", text=
+        "电池电量")
+      float master_battery_power;
+
+      @verbatim (language="comment", text=
+        "小电池电压信息")
+      float little_battery_voltage;
+
+      @verbatim (language="comment", text=
+        "小电池电流信息")
+      float little_battery_current;
+
+      @verbatim (language="comment", text=
+        "小电池电量")
+      float little_battery_power;
+
+      @verbatim (language="comment", text=
+        "00低，01高")
+      int8 pg12a;
+
+      @verbatim (language="comment", text=
+        "00低，01高")
+      int8 pg12b;
+
+      @verbatim (language="comment", text=
+        "00低，01高")
+      int8 pg12c;
+
+      @verbatim (language="comment", text=
+        "00低，01高")
+      int8 pg12d;
+
+      @verbatim (language="comment", text=
+        "00低，01高")
+      int8 pg5cd;
+
+      @verbatim (language="comment", text=
+        "00低，01高")
+      int8 pg5ab;
+
+      @verbatim (language="comment", text=
+        "00低，01高")
+      int8 pgrdc2;
+
+      @verbatim (language="comment", text=
+        "00低，01高")
+      int8 pgrdc1;
+
+      @verbatim (language="comment", text=
+        "00低，01高")
+      int8 pgheader;
+
+      @verbatim (language="comment", text=
+        "00低，01高")
+      int8 pgbutton2;
+    };
+  };
+};

@@ -1,0 +1,5 @@
+# lyre_msgs/srv/PlayStop.srv
+# 停止当前的音频播放任务（不可恢复）。
+
+string SERVICE_NAME = /audio_play/stop
+

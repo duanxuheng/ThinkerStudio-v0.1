@@ -1,0 +1,46 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from lyre_msgs/msg/AsrEvent.msg
+// generated code does not contain a copyright notice
+
+
+module lyre_msgs {
+  module msg {
+    module AsrEvent_Constants {
+      const string TOPIC_NAME = "/audio_asr/event";
+      @verbatim (language="comment", text=
+        "出错事件。arg1 是错误码。")
+      const int8 EVENT_ERROR = 2;
+      @verbatim (language="comment", text=
+        "服务状态事件。")
+      const int8 EVENT_STATE = 3;
+      @verbatim (language="comment", text=
+        "唤醒事件。")
+      const int8 EVENT_WAKEUP = 4;
+      @verbatim (language="comment", text=
+        "休眠事件。")
+      const int8 EVENT_SLEEP = 5;
+      @verbatim (language="comment", text=
+        "VAD 事件。")
+      const int8 EVENT_VAD = 6;
+      @verbatim (language="comment", text=
+        "准备休眠事件。")
+      const int8 EVENT_PRE_SLEEP = 10;
+      @verbatim (language="comment", text=
+        "与服务端建立连接。")
+      const int8 EVENT_CONNECTED_TO_SERVER = 13;
+      @verbatim (language="comment", text=
+        "与服务端断开连接。")
+      const int8 EVENT_SERVER_DISCONNECTED = 14;
+    };
+    @verbatim (language="comment", text=
+      "lyre_msgs/msg/AsrEvent.msg" "\n"
+      "ASR 设备报出的事件。")
+    struct AsrEvent {
+      int8 event;
+
+      int8 arg1;
+
+      int8 arg2;
+    };
+  };
+};

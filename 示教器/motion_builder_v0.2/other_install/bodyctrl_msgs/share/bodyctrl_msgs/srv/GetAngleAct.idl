@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from bodyctrl_msgs/srv/GetAngleAct.srv
+// generated code does not contain a copyright notice
+
+
+module bodyctrl_msgs {
+  module srv {
+    struct GetAngleAct_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    typedef float float__6[6];
+    struct GetAngleAct_Response {
+      float__6 curangle_ratio;
+    };
+  };
+};

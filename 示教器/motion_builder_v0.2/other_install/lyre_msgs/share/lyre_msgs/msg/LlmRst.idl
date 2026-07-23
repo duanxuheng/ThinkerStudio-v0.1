@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from lyre_msgs/msg/LlmRst.msg
+// generated code does not contain a copyright notice
+
+
+module lyre_msgs {
+  module msg {
+    module LlmRst_Constants {
+      const string TOPIC_NAME = "/audio_llm/rst";
+    };
+    @verbatim (language="comment", text=
+      "lyre_msgs/msg/LlmRst.msg" "\n"
+      "LLM 大模型语音对话返回的内容。")
+    struct LlmRst {
+      string sid;
+
+      uint32 seq;
+
+      boolean last;
+
+      string text;
+    };
+  };
+};

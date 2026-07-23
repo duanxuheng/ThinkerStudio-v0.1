@@ -1,0 +1,266 @@
+// generated from rosidl_generator_cpp/resource/idl__traits.hpp.em
+// with input from bodyctrl_msgs:srv/GetStatus.idl
+// generated code does not contain a copyright notice
+
+#ifndef BODYCTRL_MSGS__SRV__DETAIL__GET_STATUS__TRAITS_HPP_
+#define BODYCTRL_MSGS__SRV__DETAIL__GET_STATUS__TRAITS_HPP_
+
+#include <stdint.h>
+
+#include <sstream>
+#include <string>
+#include <type_traits>
+
+#include "bodyctrl_msgs/srv/detail/get_status__struct.hpp"
+#include "rosidl_runtime_cpp/traits.hpp"
+
+namespace bodyctrl_msgs
+{
+
+namespace srv
+{
+
+inline void to_flow_style_yaml(
+  const GetStatus_Request & msg,
+  std::ostream & out)
+{
+  (void)msg;
+  out << "null";
+}  // NOLINT(readability/fn_size)
+
+inline void to_block_style_yaml(
+  const GetStatus_Request & msg,
+  std::ostream & out, size_t indentation = 0)
+{
+  (void)msg;
+  (void)indentation;
+  out << "null\n";
+}  // NOLINT(readability/fn_size)
+
+inline std::string to_yaml(const GetStatus_Request & msg, bool use_flow_style = false)
+{
+  std::ostringstream out;
+  if (use_flow_style) {
+    to_flow_style_yaml(msg, out);
+  } else {
+    to_block_style_yaml(msg, out);
+  }
+  return out.str();
+}
+
+}  // namespace srv
+
+}  // namespace bodyctrl_msgs
+
+namespace rosidl_generator_traits
+{
+
+[[deprecated("use bodyctrl_msgs::srv::to_block_style_yaml() instead")]]
+inline void to_yaml(
+  const bodyctrl_msgs::srv::GetStatus_Request & msg,
+  std::ostream & out, size_t indentation = 0)
+{
+  bodyctrl_msgs::srv::to_block_style_yaml(msg, out, indentation);
+}
+
+[[deprecated("use bodyctrl_msgs::srv::to_yaml() instead")]]
+inline std::string to_yaml(const bodyctrl_msgs::srv::GetStatus_Request & msg)
+{
+  return bodyctrl_msgs::srv::to_yaml(msg);
+}
+
+template<>
+inline const char * data_type<bodyctrl_msgs::srv::GetStatus_Request>()
+{
+  return "bodyctrl_msgs::srv::GetStatus_Request";
+}
+
+template<>
+inline const char * name<bodyctrl_msgs::srv::GetStatus_Request>()
+{
+  return "bodyctrl_msgs/srv/GetStatus_Request";
+}
+
+template<>
+struct has_fixed_size<bodyctrl_msgs::srv::GetStatus_Request>
+  : std::integral_constant<bool, true> {};
+
+template<>
+struct has_bounded_size<bodyctrl_msgs::srv::GetStatus_Request>
+  : std::integral_constant<bool, true> {};
+
+template<>
+struct is_message<bodyctrl_msgs::srv::GetStatus_Request>
+  : std::true_type {};
+
+}  // namespace rosidl_generator_traits
+
+namespace bodyctrl_msgs
+{
+
+namespace srv
+{
+
+inline void to_flow_style_yaml(
+  const GetStatus_Response & msg,
+  std::ostream & out)
+{
+  out << "{";
+  // member: statusvalue
+  {
+    if (msg.statusvalue.size() == 0) {
+      out << "statusvalue: []";
+    } else {
+      out << "statusvalue: [";
+      size_t pending_items = msg.statusvalue.size();
+      for (auto item : msg.statusvalue) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
+  }
+  out << "}";
+}  // NOLINT(readability/fn_size)
+
+inline void to_block_style_yaml(
+  const GetStatus_Response & msg,
+  std::ostream & out, size_t indentation = 0)
+{
+  // member: statusvalue
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.statusvalue.size() == 0) {
+      out << "statusvalue: []\n";
+    } else {
+      out << "statusvalue:\n";
+      for (auto item : msg.statusvalue) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
+  }
+}  // NOLINT(readability/fn_size)
+
+inline std::string to_yaml(const GetStatus_Response & msg, bool use_flow_style = false)
+{
+  std::ostringstream out;
+  if (use_flow_style) {
+    to_flow_style_yaml(msg, out);
+  } else {
+    to_block_style_yaml(msg, out);
+  }
+  return out.str();
+}
+
+}  // namespace srv
+
+}  // namespace bodyctrl_msgs
+
+namespace rosidl_generator_traits
+{
+
+[[deprecated("use bodyctrl_msgs::srv::to_block_style_yaml() instead")]]
+inline void to_yaml(
+  const bodyctrl_msgs::srv::GetStatus_Response & msg,
+  std::ostream & out, size_t indentation = 0)
+{
+  bodyctrl_msgs::srv::to_block_style_yaml(msg, out, indentation);
+}
+
+[[deprecated("use bodyctrl_msgs::srv::to_yaml() instead")]]
+inline std::string to_yaml(const bodyctrl_msgs::srv::GetStatus_Response & msg)
+{
+  return bodyctrl_msgs::srv::to_yaml(msg);
+}
+
+template<>
+inline const char * data_type<bodyctrl_msgs::srv::GetStatus_Response>()
+{
+  return "bodyctrl_msgs::srv::GetStatus_Response";
+}
+
+template<>
+inline const char * name<bodyctrl_msgs::srv::GetStatus_Response>()
+{
+  return "bodyctrl_msgs/srv/GetStatus_Response";
+}
+
+template<>
+struct has_fixed_size<bodyctrl_msgs::srv::GetStatus_Response>
+  : std::integral_constant<bool, true> {};
+
+template<>
+struct has_bounded_size<bodyctrl_msgs::srv::GetStatus_Response>
+  : std::integral_constant<bool, true> {};
+
+template<>
+struct is_message<bodyctrl_msgs::srv::GetStatus_Response>
+  : std::true_type {};
+
+}  // namespace rosidl_generator_traits
+
+namespace rosidl_generator_traits
+{
+
+template<>
+inline const char * data_type<bodyctrl_msgs::srv::GetStatus>()
+{
+  return "bodyctrl_msgs::srv::GetStatus";
+}
+
+template<>
+inline const char * name<bodyctrl_msgs::srv::GetStatus>()
+{
+  return "bodyctrl_msgs/srv/GetStatus";
+}
+
+template<>
+struct has_fixed_size<bodyctrl_msgs::srv::GetStatus>
+  : std::integral_constant<
+    bool,
+    has_fixed_size<bodyctrl_msgs::srv::GetStatus_Request>::value &&
+    has_fixed_size<bodyctrl_msgs::srv::GetStatus_Response>::value
+  >
+{
+};
+
+template<>
+struct has_bounded_size<bodyctrl_msgs::srv::GetStatus>
+  : std::integral_constant<
+    bool,
+    has_bounded_size<bodyctrl_msgs::srv::GetStatus_Request>::value &&
+    has_bounded_size<bodyctrl_msgs::srv::GetStatus_Response>::value
+  >
+{
+};
+
+template<>
+struct is_service<bodyctrl_msgs::srv::GetStatus>
+  : std::true_type
+{
+};
+
+template<>
+struct is_service_request<bodyctrl_msgs::srv::GetStatus_Request>
+  : std::true_type
+{
+};
+
+template<>
+struct is_service_response<bodyctrl_msgs::srv::GetStatus_Response>
+  : std::true_type
+{
+};
+
+}  // namespace rosidl_generator_traits
+
+#endif  // BODYCTRL_MSGS__SRV__DETAIL__GET_STATUS__TRAITS_HPP_

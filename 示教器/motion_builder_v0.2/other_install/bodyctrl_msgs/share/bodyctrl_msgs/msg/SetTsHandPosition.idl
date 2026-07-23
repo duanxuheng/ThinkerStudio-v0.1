@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from bodyctrl_msgs/msg/SetTsHandPosition.msg
+// generated code does not contain a copyright notice
+
+
+module bodyctrl_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "TsHandName")
+    struct SetTsHandPosition {
+      int32 name;
+
+      @verbatim (language="comment", text=
+        "thumb" "\n"
+        "range: 0 ~ 90")
+      uint16 rotation_angle;
+
+      @verbatim (language="comment", text=
+        "0 - thumb, 1 - fore, 2 - middle, 3 - ring, 4 - little" "\n"
+        "range: 0 ~ 90")
+      sequence<uint16> bend_angle;
+    };
+  };
+};

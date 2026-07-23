@@ -1,0 +1,3 @@
+source;share/tienkung_action/hook/pythonpath.ps1
+source;share/tienkung_action/hook/pythonpath.dsv
+source;share/tienkung_action/hook/pythonpath.sh

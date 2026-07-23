@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from bodyctrl_msgs/srv/SetMotorZeroOffset.srv
+// generated code does not contain a copyright notice
+
+
+module bodyctrl_msgs {
+  module srv {
+    struct SetMotorZeroOffset_Request {
+      uint16 name;
+    };
+    struct SetMotorZeroOffset_Response {
+      boolean success;
+    };
+  };
+};

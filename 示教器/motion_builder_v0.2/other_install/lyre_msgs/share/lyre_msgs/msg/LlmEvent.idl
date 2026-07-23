@@ -1,0 +1,29 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from lyre_msgs/msg/LlmEvent.msg
+// generated code does not contain a copyright notice
+
+
+module lyre_msgs {
+  module msg {
+    module LlmEvent_Constants {
+      const string TOPIC_NAME = "/audio_llm/event";
+      const int8 EVENT_STARTED = 0;
+      const int8 EVENT_COMPLETED = 1;
+      const int8 EVENT_STOPPED = 2;
+      const int8 EVENT_CANCELLED = 3;
+      const int8 EVENT_FAILED = 4;
+    };
+    @verbatim (language="comment", text=
+      "lyre_msgs/msg/LlmEvent.msg" "\n"
+      "LLM 大模型语音对话的事件。")
+    struct LlmEvent {
+      string sid;
+
+      uint32 seq;
+
+      int8 event;
+
+      string message;
+    };
+  };
+};

@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from bodyctrl_msgs/srv/SetAngle.srv
+// generated code does not contain a copyright notice
+
+
+module bodyctrl_msgs {
+  module srv {
+    struct SetAngle_Request {
+      float angle0_ratio;
+
+      float angle1_ratio;
+
+      float angle2_ratio;
+
+      float angle3_ratio;
+
+      float angle4_ratio;
+
+      float angle5_ratio;
+    };
+    struct SetAngle_Response {
+      boolean angle_accepted;
+    };
+  };
+};

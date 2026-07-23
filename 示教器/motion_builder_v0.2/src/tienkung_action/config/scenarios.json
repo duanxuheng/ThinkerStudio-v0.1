@@ -1,0 +1,81 @@
+{
+  "mode": "step",
+  "trigger": {
+    "required_states": {
+      "button_e": -1,
+      "button_f": 1
+    },
+    "arm_event": "KEY_B_DOWN",
+    "fire_event": "KEY_A_DOWN",
+    "window_sec": 1.0
+  },
+  "sbus_topic": "/sbus_data/event",
+  "audio_base_dir": "/home/nvidia/traffic_voice",
+  "sim_base_dir": "src/tienkung_action/data/traffic_voice",
+  "routines": [
+    {
+      "name": "stop",
+      "audio": "stop.mp3",
+      "audio_duration_sec": 2.0,
+      "action_file": "actions/stop.json",
+      "action_start_offset_sec": 0.0,
+      "post_wait_sec": 1.0
+    },
+    {
+      "name": "pass",
+      "audio": "pass.mp3",
+      "audio_duration_sec": 2.0,
+      "action_file": "actions/pass.json",
+      "action_start_offset_sec": 0.0,
+      "post_wait_sec": 1.0
+    },
+    {
+      "name": "left_pass",
+      "audio": "left_pass.mp3",
+      "audio_duration_sec": 2.0,
+      "action_file": "actions/left_pass.json",
+      "action_start_offset_sec": 0.0,
+      "post_wait_sec": 1.0
+    },
+    {
+      "name": "right_pass",
+      "audio": "right_pass.mp3",
+      "audio_duration_sec": 2.0,
+      "action_file": "actions/right_pass.json",
+      "action_start_offset_sec": 0.0,
+      "post_wait_sec": 1.0
+    },
+    {
+      "name": "bd",
+      "audio": "bd.mp3",
+      "audio_duration_sec": 2.0,
+      "action_file": "actions/bd.json",
+      "action_start_offset_sec": 0.0,
+      "post_wait_sec": 1.0
+    },
+    {
+      "name": "daizhuan",
+      "audio": "daizhuan.mp3",
+      "audio_duration_sec": 2.0,
+      "action_file": "actions/daizhuan.json",
+      "action_start_offset_sec": 0.0,
+      "post_wait_sec": 1.0
+    },
+    {
+      "name": "js",
+      "audio": "js.mp3",
+      "audio_duration_sec": 2.0,
+      "action_file": "actions/jiansu.json",
+      "action_start_offset_sec": 0.0,
+      "post_wait_sec": 1.0
+    },
+    {
+      "name": "thanks",
+      "audio": "thanks.mp3",
+      "audio_duration_sec": 2.0,
+      "action_file": "actions/thanks.json",
+      "action_start_offset_sec": 0.0,
+      "post_wait_sec": 1.0
+    }
+  ]
+}

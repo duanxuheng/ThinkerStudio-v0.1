@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from bodyctrl_msgs/msg/SetTsHandCtrlItem.msg
+// generated code does not contain a copyright notice
+
+
+module bodyctrl_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "range: 20 ~ 200")
+    struct SetTsHandCtrlItem {
+      uint16 vel;
+
+      @verbatim (language="comment", text=
+        "range: 0 ~ 90")
+      uint16 start_angle;
+
+      @verbatim (language="comment", text=
+        "range: 0 ~ 90")
+      uint16 max_angle;
+    };
+  };
+};

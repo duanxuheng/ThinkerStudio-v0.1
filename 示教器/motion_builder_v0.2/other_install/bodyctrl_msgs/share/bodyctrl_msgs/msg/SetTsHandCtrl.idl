@@ -1,0 +1,28 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from bodyctrl_msgs/msg/SetTsHandCtrl.msg
+// generated code does not contain a copyright notice
+
+#include "bodyctrl_msgs/msg/SetTsHandCtrlItem.idl"
+
+module bodyctrl_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "type TsHandName")
+    struct SetTsHandCtrl {
+      int32 name;
+
+      @verbatim (language="comment", text=
+        "thumb")
+      bodyctrl_msgs::msg::SetTsHandCtrlItem rotation;
+
+      @verbatim (language="comment", text=
+        "0 - thumb, 1 - fore, 2 - middle, 3 - ring, 4 - little")
+      sequence<bodyctrl_msgs::msg::SetTsHandCtrlItem> bend;
+
+      @verbatim (language="comment", text=
+        "0 - thumb, 1 - fore, 2 - middle, 3 - ring, 4 - little" "\n"
+        "range: 20 ~ 1000")
+      sequence<uint16> threshold;
+    };
+  };
+};

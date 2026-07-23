@@ -1,0 +1,33 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from bodyctrl_msgs/msg/Imu.msg
+// generated code does not contain a copyright notice
+
+#include "bodyctrl_msgs/msg/Euler.idl"
+#include "geometry_msgs/msg/Quaternion.idl"
+#include "geometry_msgs/msg/Vector3.idl"
+#include "std_msgs/msg/Header.idl"
+
+module bodyctrl_msgs {
+  module msg {
+    typedef double double__3[3];
+    struct Imu {
+      std_msgs::msg::Header header;
+
+      geometry_msgs::msg::Quaternion orientation;
+
+      geometry_msgs::msg::Vector3 angular_velocity;
+
+      geometry_msgs::msg::Vector3 linear_acceleration;
+
+      bodyctrl_msgs::msg::Euler euler;
+
+      uint32 error;
+
+      double__3 angular_velocity_covariance;
+
+      double__3 orientation_covariance;
+
+      double__3 linear_acceleration_covariance;
+    };
+  };
+};

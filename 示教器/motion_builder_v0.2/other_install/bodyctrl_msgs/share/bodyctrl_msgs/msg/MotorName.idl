@@ -1,0 +1,58 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from bodyctrl_msgs/msg/MotorName.msg
+// generated code does not contain a copyright notice
+
+
+module bodyctrl_msgs {
+  module msg {
+    module MotorName_Constants {
+      const uint16 MOTOR_HEAD_1 = 1;
+      const uint16 MOTOR_HEAD_2 = 2;
+      const uint16 MOTOR_HEAD_3 = 3;
+      @verbatim (language="comment", text=
+        "arm-left 10 + id")
+      const uint16 MOTOR_ARM_LEFT_1 = 11;
+      const uint16 MOTOR_ARM_LEFT_2 = 12;
+      const uint16 MOTOR_ARM_LEFT_3 = 13;
+      const uint16 MOTOR_ARM_LEFT_4 = 14;
+      const uint16 MOTOR_ARM_LEFT_5 = 15;
+      const uint16 MOTOR_ARM_LEFT_6 = 16;
+      const uint16 MOTOR_ARM_LEFT_7 = 17;
+      @verbatim (language="comment", text=
+        "arm-right 20 + id")
+      const uint16 MOTOR_ARM_RIGHT_1 = 21;
+      const uint16 MOTOR_ARM_RIGHT_2 = 22;
+      const uint16 MOTOR_ARM_RIGHT_3 = 23;
+      const uint16 MOTOR_ARM_RIGHT_4 = 24;
+      const uint16 MOTOR_ARM_RIGHT_5 = 25;
+      const uint16 MOTOR_ARM_RIGHT_6 = 26;
+      const uint16 MOTOR_ARM_RIGHT_7 = 27;
+      @verbatim (language="comment", text=
+        "body (including waist) 30 + id")
+      const uint16 MOTOR_WAIST_1 = 31;
+      const uint16 MOTOR_WAIST_2 = 32;
+      const uint16 MOTOR_WAIST_3 = 33;
+      @verbatim (language="comment", text=
+        "40 rfu" "\n"        "leg-left 50 + id")
+      const uint16 MOTOR_LEG_LEFT_1 = 51;
+      const uint16 MOTOR_LEG_LEFT_2 = 52;
+      const uint16 MOTOR_LEG_LEFT_3 = 53;
+      const uint16 MOTOR_LEG_LEFT_4 = 54;
+      const uint16 MOTOR_LEG_LEFT_5 = 55;
+      const uint16 MOTOR_LEG_LEFT_6 = 56;
+      @verbatim (language="comment", text=
+        "leg-right 60 + id")
+      const uint16 MOTOR_LEG_RIGHT_1 = 61;
+      const uint16 MOTOR_LEG_RIGHT_2 = 62;
+      const uint16 MOTOR_LEG_RIGHT_3 = 63;
+      const uint16 MOTOR_LEG_RIGHT_4 = 64;
+      const uint16 MOTOR_LEG_RIGHT_5 = 65;
+      const uint16 MOTOR_LEG_RIGHT_6 = 66;
+    };
+    @verbatim (language="comment", text=
+      "head 00 + id")
+    struct MotorName {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

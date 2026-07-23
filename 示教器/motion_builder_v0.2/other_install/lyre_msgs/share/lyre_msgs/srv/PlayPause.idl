@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from lyre_msgs/srv/PlayPause.srv
+// generated code does not contain a copyright notice
+
+
+module lyre_msgs {
+  module srv {
+    module PlayPause_Request_Constants {
+      const string SERVICE_NAME = "/audio_play/pause";
+    };
+    @verbatim (language="comment", text=
+      "lyre_msgs/srv/PlayPause.srv" "\n"
+      "暂停当前的音频播放任务。")
+    struct PlayPause_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct PlayPause_Response {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

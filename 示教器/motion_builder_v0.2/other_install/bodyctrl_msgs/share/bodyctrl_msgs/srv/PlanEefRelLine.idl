@@ -1,0 +1,35 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from bodyctrl_msgs/srv/PlanEefRelLine.srv
+// generated code does not contain a copyright notice
+
+
+module bodyctrl_msgs {
+  module srv {
+    struct PlanEefRelLine_Request {
+      @verbatim (language="comment", text=
+        "left/right")
+      string arm_name;
+
+      @verbatim (language="comment", text=
+        "in meters")
+      double dx;
+
+      @verbatim (language="comment", text=
+        "in meters")
+      double dy;
+
+      @verbatim (language="comment", text=
+        "in meters")
+      double dz;
+
+      double vel_percent;
+
+      double acc_percent;
+    };
+    struct PlanEefRelLine_Response {
+      boolean success;
+
+      string message;
+    };
+  };
+};

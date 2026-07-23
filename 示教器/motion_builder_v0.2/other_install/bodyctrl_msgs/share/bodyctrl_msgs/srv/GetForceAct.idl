@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from bodyctrl_msgs/srv/GetForceAct.srv
+// generated code does not contain a copyright notice
+
+
+module bodyctrl_msgs {
+  module srv {
+    struct GetForceAct_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    typedef float float__6[6];
+    struct GetForceAct_Response {
+      float__6 curforce_ratio;
+    };
+  };
+};

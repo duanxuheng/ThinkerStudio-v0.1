@@ -1,0 +1,35 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from bodyctrl_msgs/msg/Alarm.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+
+module bodyctrl_msgs {
+  module msg {
+    module Alarm_Constants {
+      const int8 ALARM_INFO = 0;
+      const int8 ALARM_WARN = 1;
+      const int8 ALARM_ERROR = 2;
+      const int8 ALARM_FATAL = 3;
+    };
+    @verbatim (language="comment", text=
+      "@brief 异常码消息定义")
+    struct Alarm {
+      @verbatim (language="comment", text=
+        "时间戳")
+      builtin_interfaces::msg::Time stamp;
+
+      string node_name;
+
+      @verbatim (language="comment", text=
+        "异常码")
+      int32 error_code;
+
+      int8 level;
+
+      @verbatim (language="comment", text=
+        "异常描述")
+      string description;
+    };
+  };
+};

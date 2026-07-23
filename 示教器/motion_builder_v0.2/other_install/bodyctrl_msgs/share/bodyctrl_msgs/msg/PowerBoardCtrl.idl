@@ -1,0 +1,38 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from bodyctrl_msgs/msg/PowerBoardCtrl.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module bodyctrl_msgs {
+  module msg {
+    module PowerBoardCtrl_Constants {
+      const int32 POWER_LIGHT_POWER_ON_START = 1;
+      const int32 POWER_LIGHT_POWER_ON_FINISH = 2;
+      const int32 POWER_LIGHT_SERVICE_START = 3;
+      const int32 POWER_LIGHT_SERVICE_FINISH = 4;
+      const int32 POWER_LIGHT_SELF_CHECK_START = 5;
+      const int32 POWER_LIGHT_SELF_CHECK_FAILED = 6;
+      const int32 POWER_LIGHT_SELF_CHECK_SUCCESS = 7;
+      const int32 POWER_LIGHT_FAULT_OCCUR = 8;
+      const int32 POWER_LIGHT_FAULT_CLEAR = 9;
+      const int32 POWER_LIGHT_VOICE_WAKEUP = 10;
+      const int32 POWER_LIGHT_VOICE_RESPONSE = 11;
+      const int32 POWER_LIGHT_VOICE_EXIT = 12;
+      const int32 POWER_LIGHT_RUNNING_START = 13;
+      const int32 POWER_LIGHT_RUNNING_FINISH = 14;
+      const int32 POWER_LIGHT_POWER_OFF = 15;
+      const int32 POWER_LIGHT_WARN_OCCUR = 16;
+      const int32 POWER_LIGHT_WARN_CLEAR = 17;
+      const int32 POWER_SET_TIME_STAMP = 100;
+      const int32 POWER_GET_DATA_STATUS = 101;
+      const int32 POWER_GET_BATTERY_STATUS = 102;
+      const int32 POWER_GET_KEY_STATUS = 103;
+    };
+    struct PowerBoardCtrl {
+      std_msgs::msg::Header header;
+
+      int32 cmd;
+    };
+  };
+};

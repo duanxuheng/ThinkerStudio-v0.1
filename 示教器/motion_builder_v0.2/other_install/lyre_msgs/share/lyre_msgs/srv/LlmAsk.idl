@@ -1,0 +1,42 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from lyre_msgs/srv/LlmAsk.srv
+// generated code does not contain a copyright notice
+
+
+module lyre_msgs {
+  module srv {
+    module LlmAsk_Request_Constants {
+      const string SERVICE_NAME = "/audio_llm/ask";
+    };
+    @verbatim (language="comment", text=
+      "lyre_msgs/srv/LlmAsk.srv" "\n"
+      "向 LLM 大模型提出一个问题。")
+    struct LlmAsk_Request {
+      @verbatim (language="comment", text=
+        "optional. An identifier responds to the IAT ID.")
+      string id;
+
+      @verbatim (language="comment", text=
+        "required.")
+      string text;
+    };
+    module LlmAsk_Response_Constants {
+      const int8 CODE_OK = 0;
+      const int8 CODE_INVALID_PARAMS = 1;
+      const int8 CODE_FAILED = -1;
+    };
+    struct LlmAsk_Response {
+      @verbatim (language="comment", text=
+        "Stream identifier (unique per llm question).")
+      string sid;
+
+      @verbatim (language="comment", text=
+        "Status code.")
+      int8 code;
+
+      @verbatim (language="comment", text=
+        "Human-readable status message.")
+      string message;
+    };
+  };
+};

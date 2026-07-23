@@ -1,0 +1,35 @@
+[0.743s] Invoking command in '/home/yaojunqi/Desktop/motion_builder/src/tienkung_action': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/yaojunqi/Desktop/motion_builder/build/tienkung_action/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yaojunqi/Desktop/motion_builder/install/tienkung_action/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tienkung_action build --build-base /home/yaojunqi/Desktop/motion_builder/build/tienkung_action/build install --record /home/yaojunqi/Desktop/motion_builder/build/tienkung_action/install.log --single-version-externally-managed install_data
+[0.867s] /home/yaojunqi/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[0.867s]   warnings.warn(msg)
+[0.950s] running egg_info
+[0.965s] writing ../../build/tienkung_action/tienkung_action.egg-info/PKG-INFO
+[0.966s] writing dependency_links to ../../build/tienkung_action/tienkung_action.egg-info/dependency_links.txt
+[0.966s] writing entry points to ../../build/tienkung_action/tienkung_action.egg-info/entry_points.txt
+[0.966s] writing requirements to ../../build/tienkung_action/tienkung_action.egg-info/requires.txt
+[0.966s] writing top-level names to ../../build/tienkung_action/tienkung_action.egg-info/top_level.txt
+[0.995s] reading manifest file '../../build/tienkung_action/tienkung_action.egg-info/SOURCES.txt'
+[0.996s] writing manifest file '../../build/tienkung_action/tienkung_action.egg-info/SOURCES.txt'
+[0.996s] running build
+[0.996s] running build_py
+[0.996s] copying tienkung_action/trigger_player.py -> /home/yaojunqi/Desktop/motion_builder/build/tienkung_action/build/lib/tienkung_action
+[0.997s] running install
+[1.000s] running install_lib
+[1.014s] running install_data
+[1.014s] copying config/scenarios.json -> /home/yaojunqi/Desktop/motion_builder/install/tienkung_action/share/tienkung_action/config
+[1.015s] copying config/actions/daizhuan.json -> /home/yaojunqi/Desktop/motion_builder/install/tienkung_action/share/tienkung_action/config/actions
+[1.016s] copying config/actions/left_pass.json -> /home/yaojunqi/Desktop/motion_builder/install/tienkung_action/share/tienkung_action/config/actions
+[1.016s] copying config/actions/bd.json -> /home/yaojunqi/Desktop/motion_builder/install/tienkung_action/share/tienkung_action/config/actions
+[1.017s] copying config/actions/thanks.json -> /home/yaojunqi/Desktop/motion_builder/install/tienkung_action/share/tienkung_action/config/actions
+[1.017s] copying config/actions/swear_1.json -> /home/yaojunqi/Desktop/motion_builder/install/tienkung_action/share/tienkung_action/config/actions
+[1.017s] copying config/actions/pass.json -> /home/yaojunqi/Desktop/motion_builder/install/tienkung_action/share/tienkung_action/config/actions
+[1.018s] copying config/actions/stop.json -> /home/yaojunqi/Desktop/motion_builder/install/tienkung_action/share/tienkung_action/config/actions
+[1.018s] copying config/actions/jiansu.json -> /home/yaojunqi/Desktop/motion_builder/install/tienkung_action/share/tienkung_action/config/actions
+[1.019s] copying config/actions/right_pass.json -> /home/yaojunqi/Desktop/motion_builder/install/tienkung_action/share/tienkung_action/config/actions
+[1.019s] copying config/actions/swear_2.json -> /home/yaojunqi/Desktop/motion_builder/install/tienkung_action/share/tienkung_action/config/actions
+[1.020s] running install_egg_info
+[1.034s] removing '/home/yaojunqi/Desktop/motion_builder/install/tienkung_action/lib/python3.10/site-packages/tienkung_action-0.0.1-py3.10.egg-info' (and everything under it)
+[1.035s] Copying ../../build/tienkung_action/tienkung_action.egg-info to /home/yaojunqi/Desktop/motion_builder/install/tienkung_action/lib/python3.10/site-packages/tienkung_action-0.0.1-py3.10.egg-info
+[1.035s] running install_scripts
+[1.065s] Installing trigger_player script to /home/yaojunqi/Desktop/motion_builder/install/tienkung_action/lib/tienkung_action
+[1.065s] writing list of installed files to '/home/yaojunqi/Desktop/motion_builder/build/tienkung_action/install.log'
+[1.190s] Invoked command in '/home/yaojunqi/Desktop/motion_builder/src/tienkung_action' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/yaojunqi/Desktop/motion_builder/build/tienkung_action/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yaojunqi/Desktop/motion_builder/install/tienkung_action/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tienkung_action build --build-base /home/yaojunqi/Desktop/motion_builder/build/tienkung_action/build install --record /home/yaojunqi/Desktop/motion_builder/build/tienkung_action/install.log --single-version-externally-managed install_data

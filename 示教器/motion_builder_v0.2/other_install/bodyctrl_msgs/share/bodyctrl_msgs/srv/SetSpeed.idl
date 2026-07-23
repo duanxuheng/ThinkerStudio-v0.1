@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from bodyctrl_msgs/srv/SetSpeed.srv
+// generated code does not contain a copyright notice
+
+
+module bodyctrl_msgs {
+  module srv {
+    struct SetSpeed_Request {
+      float speed0_ratio;
+
+      float speed1_ratio;
+
+      float speed2_ratio;
+
+      float speed3_ratio;
+
+      float speed4_ratio;
+
+      float speed5_ratio;
+    };
+    struct SetSpeed_Response {
+      boolean speed_accepted;
+    };
+  };
+};

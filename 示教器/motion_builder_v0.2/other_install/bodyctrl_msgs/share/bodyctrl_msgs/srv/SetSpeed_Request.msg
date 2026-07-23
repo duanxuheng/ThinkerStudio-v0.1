@@ -1,0 +1,6 @@
+float32 speed0_ratio
+float32 speed1_ratio
+float32 speed2_ratio
+float32 speed3_ratio
+float32 speed4_ratio
+float32 speed5_ratio

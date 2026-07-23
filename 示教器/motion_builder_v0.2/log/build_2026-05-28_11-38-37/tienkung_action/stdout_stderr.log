@@ -1,0 +1,33 @@
+/home/yaojunqi/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+  warnings.warn(msg)
+running egg_info
+writing ../../build/tienkung_action/tienkung_action.egg-info/PKG-INFO
+writing dependency_links to ../../build/tienkung_action/tienkung_action.egg-info/dependency_links.txt
+writing entry points to ../../build/tienkung_action/tienkung_action.egg-info/entry_points.txt
+writing requirements to ../../build/tienkung_action/tienkung_action.egg-info/requires.txt
+writing top-level names to ../../build/tienkung_action/tienkung_action.egg-info/top_level.txt
+reading manifest file '../../build/tienkung_action/tienkung_action.egg-info/SOURCES.txt'
+writing manifest file '../../build/tienkung_action/tienkung_action.egg-info/SOURCES.txt'
+running build
+running build_py
+copying tienkung_action/trigger_player.py -> /home/yaojunqi/Desktop/motion_builder/build/tienkung_action/build/lib/tienkung_action
+running install
+running install_lib
+running install_data
+copying config/scenarios.json -> /home/yaojunqi/Desktop/motion_builder/install/tienkung_action/share/tienkung_action/config
+copying config/actions/daizhuan.json -> /home/yaojunqi/Desktop/motion_builder/install/tienkung_action/share/tienkung_action/config/actions
+copying config/actions/left_pass.json -> /home/yaojunqi/Desktop/motion_builder/install/tienkung_action/share/tienkung_action/config/actions
+copying config/actions/bd.json -> /home/yaojunqi/Desktop/motion_builder/install/tienkung_action/share/tienkung_action/config/actions
+copying config/actions/thanks.json -> /home/yaojunqi/Desktop/motion_builder/install/tienkung_action/share/tienkung_action/config/actions
+copying config/actions/swear_1.json -> /home/yaojunqi/Desktop/motion_builder/install/tienkung_action/share/tienkung_action/config/actions
+copying config/actions/pass.json -> /home/yaojunqi/Desktop/motion_builder/install/tienkung_action/share/tienkung_action/config/actions
+copying config/actions/stop.json -> /home/yaojunqi/Desktop/motion_builder/install/tienkung_action/share/tienkung_action/config/actions
+copying config/actions/jiansu.json -> /home/yaojunqi/Desktop/motion_builder/install/tienkung_action/share/tienkung_action/config/actions
+copying config/actions/right_pass.json -> /home/yaojunqi/Desktop/motion_builder/install/tienkung_action/share/tienkung_action/config/actions
+copying config/actions/swear_2.json -> /home/yaojunqi/Desktop/motion_builder/install/tienkung_action/share/tienkung_action/config/actions
+running install_egg_info
+removing '/home/yaojunqi/Desktop/motion_builder/install/tienkung_action/lib/python3.10/site-packages/tienkung_action-0.0.1-py3.10.egg-info' (and everything under it)
+Copying ../../build/tienkung_action/tienkung_action.egg-info to /home/yaojunqi/Desktop/motion_builder/install/tienkung_action/lib/python3.10/site-packages/tienkung_action-0.0.1-py3.10.egg-info
+running install_scripts
+Installing trigger_player script to /home/yaojunqi/Desktop/motion_builder/install/tienkung_action/lib/tienkung_action
+writing list of installed files to '/home/yaojunqi/Desktop/motion_builder/build/tienkung_action/install.log'

@@ -1,0 +1,29 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from bodyctrl_msgs/msg/Exception.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+
+module bodyctrl_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "@brief 异常码消息定义")
+    struct Exception {
+      @verbatim (language="comment", text=
+        "时间戳")
+      builtin_interfaces::msg::Time stamp;
+
+      @verbatim (language="comment", text=
+        "异常码")
+      int64 code;
+
+      @verbatim (language="comment", text=
+        "异常描述")
+      string desc;
+
+      @verbatim (language="comment", text=
+        "节点名称")
+      string nodename;
+    };
+  };
+};

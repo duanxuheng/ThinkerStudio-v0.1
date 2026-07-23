@@ -1,0 +1,2 @@
+
+bool angle_accepted

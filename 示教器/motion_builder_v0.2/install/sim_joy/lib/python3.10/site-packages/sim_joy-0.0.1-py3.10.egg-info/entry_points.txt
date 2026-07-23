@@ -1,0 +1,3 @@
+[console_scripts]
+teleop_gui = sim_joy.gui_monitor:main
+teleop_joy = sim_joy.teleop_joy:main

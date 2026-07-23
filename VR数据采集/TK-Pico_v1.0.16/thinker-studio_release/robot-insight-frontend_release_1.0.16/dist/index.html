@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
+    <title>Robot Insight</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+    <link rel="alternate icon" href="./favicon.svg">
+    <!-- Blocking script: Set theme before rendering any content -->
+    <script>
+        (function() {
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const theme = localStorage.getItem('theme') || (prefersDark ? 'dark' : 'light');
+            const bgColor = theme === 'dark' ? '#000000' : '#ffffff';
+
+            // Write styles directly to document
+            document.write('<style>html,body{margin:0;padding:0;background-color:' + bgColor + ';transition:none !important;}</style>');
+
+            // Set theme attribute for CSS
+            if (document.documentElement) {
+                document.documentElement.setAttribute('data-theme', theme);
+            }
+        })();
+    </script>
+
+    <style>
+        
+    </style>
+
+    <!-- MATOMO_PLACEHOLDER -->
+  <script type="module" crossorigin src="/assets/js/main-0QZeB02g.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/js/__vite-browser-external-YP0FEG5d.js">
+  <link rel="modulepreload" crossorigin href="/assets/js/three-DIZX9QkQ.js">
+  <link rel="modulepreload" crossorigin href="/assets/js/d3-Cfj5nKmi.js">
+  <link rel="modulepreload" crossorigin href="/assets/js/index-Bw0ULFVN.js">
+  <link rel="modulepreload" crossorigin href="/assets/js/index-DRbsQkF5.js">
+  <link rel="modulepreload" crossorigin href="/assets/js/codemirror-D-2yCNHM.js">
+  <link rel="modulepreload" crossorigin href="/assets/js/codemirror-themes-6fw6pDVL.js">
+  <link rel="modulepreload" crossorigin href="/assets/js/ControlPanelWarning-DNFAbPVK.js">
+  <link rel="modulepreload" crossorigin href="/assets/js/assets_manifest-DbA7niFN.js">
+  <link rel="modulepreload" crossorigin href="/assets/js/MessageBox-Dsq0BZjb.js">
+  <link rel="modulepreload" crossorigin href="/assets/js/Modal-BsbIdyOo.js">
+  <link rel="stylesheet" crossorigin href="/assets/css/Modal.css">
+  <link rel="stylesheet" crossorigin href="/assets/css/main.css">
+</head>
+<body>
+    <div id="app-tabs">
+        <button class="tab active" data-view="robot" data-i18n="tabRobot">机器人</button>
+        <button class="tab" data-view="action" data-i18n="tabAction">动作播放</button>
+        <button class="tab" data-view="record" data-i18n="tabRecord">录制历史</button>
+        <button class="tab" data-view="label" data-i18n="tabLabel">数采历史</button>
+        <!-- <button class="tab" data-view="lerobot-dataset" data-i18n="tabLerobotDataset">Lerobot 数据集</button> -->
+        <button class="tab" data-view="setting" data-i18n="tabSetting">参数设置</button>
+    </div>
+
+    <div id="views">
+        <!-- Robot view is loaded inline because main.js needs canvas immediately -->
+        <div class="view active" id="view-robot">
+            <div id="container">
+                <div id="canvas-container">
+                    <div id="top-control-bar">
+                        <div class="control-bar-section">
+                            <button class="tool-button active" id="toggle-xtele-panel">
+                                <span class="tool-button-text" data-i18n="xtele"></span>
+                            </button>
+                            <button class="tool-button" id="toggle-joints-panel">
+                                <span class="tool-button-text" data-i18n="joints"></span>
+                            </button>
+                            <button class="tool-button active" id="toggle-history-panel">
+                                <span class="tool-button-text" data-i18n="history"></span>
+                            </button>
+                        </div>
+
+                        <div class="control-bar-divider"></div>
+
+                        <div class="control-bar-section">
+                            <select id="robot-select" class="control-bar-select" data-i18n-title="selectRobot"></select>
+                        </div>
+
+                        <div class="control-bar-divider"></div>
+
+                            <button class="control-button" id="show-collision" data-checked="false">
+                                <span data-i18n="collision"></span>
+                            </button>
+                            <button class="control-button" id="show-inertia" data-checked="false">
+                                <span data-i18n="inertia"></span>
+                            </button>
+                            <button class="control-button" id="show-com" data-checked="false">
+                                <span data-i18n="com"></span>
+                            </button>
+                            <button class="control-button" id="toggle-axes-btn" data-checked="false">
+                                <span data-i18n="axes"></span>
+                            </button>
+                            <button class="control-button" id="toggle-joint-axes-btn" data-checked="false">
+                                <span data-i18n="jointAxes"></span>
+                            </button>
+                            <button class="control-button active" id="toggle-shadow" data-checked="true">
+                                <span data-i18n="shadow"></span>
+                            </button>
+                            <button class="control-button active" id="toggle-lighting" data-checked="true">
+                                <span data-i18n="lighting"></span>
+                            </button>
+        
+                        <div class="control-bar-divider"></div>
+        
+                        <div class="control-bar-section">
+                            <!-- <button class="tool-button" id="help-button">
+                                <span class="tool-button-text" data-i18n="help"></span>
+                            </button> -->
+                            <button class="tool-button" id="language-toggle">
+                                <span class="tool-button-text" data-i18n="language"></span>
+                            </button>
+                            <button class="tool-button" id="theme-toggle">
+                                <span class="tool-button-icon">🌙</span>
+                            </button>
+                        </div>
+                    </div>
+        
+                    <div id="mujoco-simulation-bar" style="display:none;">
+                        <button id="mujoco-reset-btn-bar">
+                            <span data-i18n="mujocoReset"></span>
+                        </button>
+                        <button id="mujoco-simulate-btn-bar">
+                            <span data-i18n="mujocoSimulate"></span>
+                        </button>
+                    </div>
+        
+                    <canvas id="canvas"></canvas>
+
+                    <!-- 左侧操作控制面板 -->
+                    <div id="floating-control-panel" class="floating-panel">
+                        <div class="floating-panel-header">
+                            <span data-i18n="controlPanel"></span>
+                            <div class="control-panel-header-actions">
+                                <button class="panel-close-btn" data-panel="floating-control-panel">✕</button>
+                            </div>
+                        </div>
+                        <div class="floating-panel-content control-panel-content">
+                            <!-- 整个控制面板由 React 渲染 -->
+                            <div id="control-panel-root"></div>
+                        </div>
+                    </div>
+        
+                    <div id="floating-joints-panel" class="floating-panel maximized" style="display: none;">
+                        <div class="floating-panel-header">
+                            <span data-i18n="jointControl"></span>
+                            <div class="joints-panel-controls">
+                                <div id="unit-toggle">
+                                    <button id="unit-rad" class="active" data-i18n="radian"></button>
+                                    <button id="unit-deg" data-i18n="degree"></button>
+                                </div>
+                                <button class="control-button" id="apply-joint-dict-btn" title="Apply joint dictionary">
+                                    <span data-i18n="jointSet"></span>
+                                </button>
+                                <button class="control-button" id="reset-joints-btn">
+                                    <span data-i18n="reset"></span>
+                                </button>
+                                <button class="control-button active" id="ignore-limits" data-checked="true">
+                                    <span data-i18n="limits"></span>
+                                </button>
+                                <button class="panel-maximize-btn" data-panel-id="floating-joints-panel">⛶</button>
+                                <button class="panel-close-btn" data-panel="floating-joints-panel">✕</button>
+                            </div>
+                        </div>
+                        <div class="floating-panel-content" id="joint-controls">
+                            <div class="empty-state" data-i18n="noModel"></div>
+                        </div>
+                    </div>
+
+                    <div id="floating-history-panel" class="floating-panel maximized">
+                        <div class="floating-panel-header">
+                            <span data-i18n="historyPanel"></span>
+                            <div class="history-panel-controls">
+                                <button class="panel-maximize-btn" data-panel-id="floating-history-panel">⛶</button>
+                                <button class="panel-close-btn" data-panel="floating-history-panel">✕</button>
+                            </div>
+                        </div>
+                        <div class="floating-panel-content history-panel-content">
+                            <!-- 动作录制历史 -->
+                            <div class="history-section">
+                                <div class="history-section-header">
+                                    <span class="history-section-title" data-i18n="recordHistory"></span>
+                                    <button class="history-more-btn" data-target-tab="record" data-i18n="more"></button>
+                                </div>
+                                <div id="record-action-path" style="color: #888; font-size: 13px; margin-top: 2px; margin-bottom: 8px;"></div>
+                                <div id="record-history-table-wrapper">
+                                    <table class="history-table">
+                                        <thead>
+                                            <tr>
+                                                <th class="col-time" data-i18n="time">时间</th>
+                                                <th class="col-name" data-i18n="name">名称</th>
+                                                <th class="col-ops" data-i18n="operation">操作</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="record-history-table-body">
+                                            <tr><td colspan="3" class="loading-state" data-i18n="loadingRecords">加载中...</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div id="record-history-empty" class="history-empty" style="display:none;" data-i18n="noRecordHistory"></div>
+                            </div>
+                            <!-- 数据采集历史 -->
+                            <div class="history-section">
+                                <div class="history-section-header">
+                                    <span class="history-section-title" data-i18n="collectHistory"></span>
+                                    <button class="history-more-btn" data-target-tab="label" data-i18n="more"></button>
+                                </div>
+                                <div id="label-collect-path" style="color: #888; font-size: 13px; margin-top: 2px; margin-bottom: 8px;"></div>
+                                <div id="collect-history-table-wrapper">
+                                    <table class="history-table">
+                                        <thead>
+                                            <tr>
+                                                <th class="col-time" data-i18n="time">时间</th>
+                                                <th class="col-name" data-i18n="name">名称</th>
+                                                <th class="col-ops" data-i18n="operation">操作</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="collect-history-table-body">
+                                            <tr><td colspan="3" class="loading-state" data-i18n="loadingRecords">加载中...</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div id="collect-history-empty" class="history-empty" style="display:none;" data-i18n="noCollectHistory"></div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div id="drop-zone">
+                        <div id="drop-text">
+                            <strong data-i18n="dropHint"></strong><br>
+                            <span style="font-size: 12px; margin-top: 8px; display: block;" data-i18n="dropHintSub"></span>
+                        </div>
+                    </div>
+        
+                    <div id="hover-info">
+                        <div id="hover-link-name"></div>
+                        <div id="hover-joint-name"></div>
+                        <div id="hover-link-mass"></div>
+                        <div id="hover-merged-links"></div>
+                    </div>
+        
+                    <div id="floating-help-panel" class="floating-panel" style="display: none;">
+                        <div class="floating-panel-header">
+                            <span data-i18n="helpTitle">Robot Insight v1.0.15</span>
+                            <button class="panel-close-btn" data-panel="floating-help-panel">✕</button>
+                        </div>
+                        <div class="floating-panel-content">
+                            <div class="help-section">
+                                <div class="help-section-title" data-i18n="about"></div>
+                                <div class="help-section-content">
+                                    <p data-i18n="aboutContent"></p>
+                                    <div class="help-action-buttons">
+                                        <a href="https://github.com/fan-ziqi/robot_viewer" target="_blank" rel="noopener" class="help-action-btn">
+                                            <svg style="width: 14px; height: 14px; margin-right: 6px; fill: currentColor; vertical-align: middle;" viewBox="0 0 16 16">
+                                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                                            </svg>
+                                            <span data-i18n="projectHome"></span>
+                                        </a>
+                                        <a href="mailto:fanziqi614@gmail.com" class="help-action-btn">
+                                            <svg style="width: 14px; height: 14px; margin-right: 6px; fill: currentColor; vertical-align: middle;" viewBox="0 0 16 16">
+                                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                                            </svg>
+                                            <span data-i18n="email">Email</span>
+                                        </a>
+                                        <a href="https://github.com/fan-ziqi" target="_blank" rel="noopener" class="help-action-btn">
+                                            <svg style="width: 14px; height: 14px; margin-right: 6px; fill: currentColor; vertical-align: middle;" viewBox="0 0 16 16">
+                                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                                            </svg>
+                                            <span data-i18n="githubProfile">GitHub Profile</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div id="code-editor-panel" class="floating-panel">
+                        <div class="code-editor-header">
+                            <div class="code-editor-title">
+                                <span data-i18n="codeEditor"></span>
+                            </div>
+                            <div class="code-editor-actions">
+                                <button class="code-editor-btn" id="reload-btn" data-i18n="reload"></button>
+                                <button class="code-editor-btn primary" id="save-btn" data-i18n="download"></button>
+                            </div>
+                            <button class="panel-maximize-btn" data-panel-id="code-editor-panel">⛶</button>
+                            <button class="panel-close-btn" id="close-editor-btn">✕</button>
+                        </div>
+                        <div class="code-editor-info-bar">
+                            <input type="text" class="code-editor-filename-input" id="editor-filename-input" placeholder="newfile.xml" />
+                            <span class="code-editor-filename" id="editor-filename" data-i18n="noFileOpen"></span>
+                            <span class="code-editor-save-status saved" id="editor-save-status" data-i18n="saved"></span>
+                        </div>
+                        <div id="code-editor-content">
+                            <div id="code-editor-wrapper" style="height: 100%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="bottom-help-bar">
+                <div class="bottom-help-item">
+                    <span class="bottom-help-key" data-i18n="leftDrag"></span>
+                    <span data-i18n="rotateView"></span>
+                </div>
+                <div class="bottom-help-separator"></div>
+                <div class="bottom-help-item">
+                    <span class="bottom-help-key" data-i18n="rightDrag"></span>
+                </div>
+                <div class="bottom-help-separator"></div>
+                <div class="bottom-help-item">
+                    <span class="bottom-help-key" data-i18n="scroll"></span>
+                    <span data-i18n="zoom"></span>
+                </div>
+                <div class="bottom-help-separator"></div>
+                <div class="bottom-help-item">
+                    <span class="bottom-help-key" data-i18n="clickModel"></span>
+                    <span data-i18n="controlJoint"></span>
+                </div>
+            </div>
+
+            <!-- Joint dictionary modal (theme-consistent with existing help dialog) -->
+            <div id="joint-dict-dialog" class="github-help-dialog" aria-hidden="true">
+                <div class="help-dialog-content">
+                    <div class="help-dialog-header">
+                        <h3 data-i18n="applyJointDictTitle">Apply Joint Dictionary</h3>
+                        <button id="joint-dict-close" class="help-dialog-close">✕</button>
+                    </div>
+                    <div class="help-dialog-body">
+                        <!-- Tabs -->
+                        <div class="joint-dict-tabs">
+                            <button class="joint-dict-tab-btn active" data-tab="dict">Dictionary</button>
+                            <button class="joint-dict-tab-btn" data-tab="table">Table</button>
+                            <button class="joint-dict-tab-btn" data-tab="animation">Animation</button>
+                        </div>
+
+                        <!-- Tab 1: Dictionary Mode -->
+                        <div class="joint-dict-tab-content active" data-tab-content="dict">
+                            <p style="color:var(--text-secondary);font-size:13px;margin:0 0 12px 0;">Paste a JSON object mapping joint names to values:</p>
+                            <textarea id="joint-dict-input" class="github-path-input" rows="8" placeholder='{"hip_roll_l_joint":0.5,"hip_pitch_l_joint":1}'></textarea>
+                            <div class="help-section" style="margin-top:12px;">
+                                <p style="font-size:12px;margin:4px 0;">Examples:</p>
+                                <p style="font-size:11px;margin:4px 0;"><code>{"shoulder": 0.5, "elbow": -0.3}</code></p>
+                            </div>
+                        </div>
+
+                        <!-- Tab 2: Table Mode -->
+                        <div class="joint-dict-tab-content" data-tab-content="table">
+                            <p style="color:var(--text-secondary);font-size:13px;margin:0 0 12px 0;">Paste joint array and value array with unit type:</p>
+                            <textarea id="joint-table-input" class="github-path-input" rows="8" placeholder='{"joint":["hip_roll_l_joint","hip_pitch_l_joint"],"value":[0.5,1],"valueType":"radians"}'></textarea>
+                            <div class="help-section" style="margin-top:12px;">
+                                <p style="font-size:12px;margin:4px 0;">valueType: "radians" or "degrees"</p>
+                            </div>
+                        </div>
+
+                        <!-- Tab 3: Animation Mode -->
+                        <div class="joint-dict-tab-content" data-tab-content="animation">
+                            <p style="color:var(--text-secondary);font-size:13px;margin:0 0 8px 0;">Load from file or paste JSON:</p>
+                            <div style="display:flex;gap:8px;margin-bottom:12px;">
+                                <input type="file" id="joint-animation-file" accept=".json" style="flex:1;padding:8px;background:var(--glass-border);border:1px solid var(--glass-border);border-radius:8px;color:var(--text-primary);font-size:13px;" />
+                            </div>
+                            <textarea id="joint-animation-input" class="github-path-input" rows="6" placeholder='{"joint":["joint1","joint2"],"value":[[0.1,0.2],[0.5,0.8]],"fps":30,"loop":1,"valueType":"radians"}'></textarea>
+                            <div style="display:flex;gap:12px;align-items:center;margin-top:12px;">
+                                <label style="color:var(--text-secondary);font-size:13px;">Loop count:</label>
+                                <input type="number" id="joint-animation-loop" min="1" value="1" style="width:80px;padding:6px 10px;background:var(--glass-border);border:1px solid var(--glass-border);border-radius:6px;color:var(--text-primary);font-size:13px;" />
+                                <span style="color:var(--text-tertiary);font-size:12px;">(default: 1)</span>
+                            </div>
+                            <div class="help-section" style="margin-top:12px;">
+                                <p style="font-size:12px;margin:4px 0;">Each row in value array is a keyframe. Add "loop" field in JSON or use input above.</p>
+                            </div>
+                        </div>
+
+                        <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:16px;">
+                            <button id="joint-dict-cancel-btn" class="help-dialog-close">Cancel</button>
+                            <button id="joint-dict-apply-btn" class="github-load-btn">Apply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Other views will be loaded dynamically by TabManager -->
+        <div class="view" id="view-action"></div>
+        <div class="view" id="view-record"></div>
+        <div class="view" id="view-label"></div>
+        <div class="view" id="view-lerobot-dataset"></div>
+        <div class="view" id="view-setting"></div>
+    </div>
+
+    <!-- 控制面板弹窗由 React Modal 组件渲染 -->
+
+    <div class="modal-overlay" id="floating-record-play-confirm-modal">
+        <div class="modal-container modal-sm">
+            <div class="modal-header">
+                <h3>播放确认</h3>
+                <button class="modal-close-btn" id="floating-record-play-confirm-modal-close">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.75.75 0 1 1 1.06 1.06L9.06 8l3.22 3.22a.75.75 0 1 1-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 0 1-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="confirm-message">播放前请确认以下事项：</p>
+                <p class="play-confirm-tip">1.请确认机器人已经设置为半身遥操模式(F键下拨->长按A键->E键上拨)</p>
+                <p class="play-confirm-tip">2.请确认机器人周边无人或障碍物，注意安全</p>
+                <p class="confirm-sub-message" id="floating-record-play-confirm-name"></p>
+            </div>
+            <div class="modal-footer">
+                <button class="modal-btn cancel-btn" id="floating-record-play-confirm-cancel-btn" data-i18n="cancelBtn">取消</button>
+                <button class="modal-btn confirm-btn" id="floating-record-play-confirm-confirm-btn">确认播放</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 动作播放悬浮窗 -->
+    <div id="playback-panel" class="floating-panel playback-panel hidden">
+        <div class="floating-panel-header playback-panel-header">
+            <div class="playback-header-left">
+                <span>播放动作</span>
+            </div>
+            <div class="playback-header-center">
+                <span class="playback-action-name" id="playback-action-name">-</span>
+            </div>
+            <div class="playback-header-right">
+                <div class="playback-panel-controls">
+                    <button class="panel-close-btn" data-panel="playback-panel">✕</button>
+                </div>
+            </div>
+        </div>
+        <div class="floating-panel-content playback-panel-content">
+            <!-- 动作播放控制 -->
+            <div class="playback-panel-info">
+                <div class="playback-info-row">
+                    <span class="playback-time" id="playback-current-time">00:00</span>
+                    <span class="playback-total-time" id="playback-total-time">00:00</span>
+                </div>
+            </div>
+
+            <!-- 进度条和控制按钮 -->
+            <div class="playback-controls-row">
+                <div class="playback-controls">
+                    <button class="playback-btn playback-play-btn" id="playback-play-btn" title="播放">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                        <span>播放</span>
+                    </button>
+                    <button class="playback-btn playback-pause-btn" id="playback-pause-btn" title="暂停" style="display: none;">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>
+                        </svg>
+                        <span>暂停</span>
+                    </button>
+                    <!-- <button class="playback-btn playback-stop-btn" id="playback-stop-btn" title="停止">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 6h12v12H6V6z"/>
+                        </svg>
+                        <span>停止</span>似乎是不应该给用户停止动作的能力，停止动作后手臂没有回位，再开始其他动作是不安全的，等于也同样需要急停后手动回位，再重新启动另一个动作，所以并没有什么用
+                    </button> -->
+                </div>
+                <div class="playback-progress-wrapper">
+                    <div class="playback-progress-bar" id="playback-progress-bar">
+                        <div class="playback-progress-fill" id="playback-progress-fill"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

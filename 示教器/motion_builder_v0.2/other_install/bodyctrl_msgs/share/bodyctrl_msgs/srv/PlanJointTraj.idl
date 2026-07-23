@@ -1,0 +1,33 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from bodyctrl_msgs/srv/PlanJointTraj.srv
+// generated code does not contain a copyright notice
+
+
+module bodyctrl_msgs {
+  module srv {
+    struct PlanJointTraj_Request {
+      @verbatim (language="comment", text=
+        "left/right")
+      string arm_name;
+
+      sequence<double> joint_pos;
+
+      sequence<double> joint_vel;
+
+      double vel_percent;
+
+      double acc_percent;
+
+      double jerk_percent;
+
+      @verbatim (language="comment", text=
+        "0: position, 1: velocity, 2: acceleration, 3: jerk")
+      int32 mode;
+    };
+    struct PlanJointTraj_Response {
+      boolean success;
+
+      string message;
+    };
+  };
+};

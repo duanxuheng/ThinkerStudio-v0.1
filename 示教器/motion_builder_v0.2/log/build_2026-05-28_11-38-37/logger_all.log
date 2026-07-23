@@ -1,0 +1,276 @@
+[0.084s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'tiangong2pro_urdf', 'sim_joy', 'tienkung_action', '--cmake-clean-cache', '--cmake-args', '-DPython3_EXECUTABLE=/usr/bin/python3']
+[0.084s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=32, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['tiangong2pro_urdf', 'sim_joy', 'tienkung_action'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=['-DPython3_EXECUTABLE=/usr/bin/python3'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=True, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f9e5967bdc0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f9e596215d0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f9e596215d0>>, mixin_verb=('build',))
+[0.114s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.114s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.114s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.114s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.114s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.114s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.114s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/yaojunqi/Desktop/motion_builder'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(other_install) by extensions ['ignore', 'ignore_ament_install']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(other_install) by extension 'ignore'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(other_install) ignored
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(save) by extensions ['ignore', 'ignore_ament_install']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(save) by extension 'ignore'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(save) by extension 'ignore_ament_install'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(save) by extensions ['colcon_pkg']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(save) by extension 'colcon_pkg'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(save) by extensions ['colcon_meta']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(save) by extension 'colcon_meta'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(save) by extensions ['ros']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(save) by extension 'ros'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(save) by extensions ['cmake', 'python']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(save) by extension 'cmake'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(save) by extension 'python'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(save) by extensions ['python_setup_py']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(save) by extension 'python_setup_py'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_joy) by extensions ['ignore', 'ignore_ament_install']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_joy) by extension 'ignore'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_joy) by extension 'ignore_ament_install'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_joy) by extensions ['colcon_pkg']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_joy) by extension 'colcon_pkg'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_joy) by extensions ['colcon_meta']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_joy) by extension 'colcon_meta'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_joy) by extensions ['ros']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_joy) by extension 'ros'
+[0.129s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sim_joy' with type 'ros.ament_python' and name 'sim_joy'
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiangong2pro_urdf) by extensions ['ignore', 'ignore_ament_install']
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiangong2pro_urdf) by extension 'ignore'
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiangong2pro_urdf) by extension 'ignore_ament_install'
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiangong2pro_urdf) by extensions ['colcon_pkg']
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiangong2pro_urdf) by extension 'colcon_pkg'
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiangong2pro_urdf) by extensions ['colcon_meta']
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiangong2pro_urdf) by extension 'colcon_meta'
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiangong2pro_urdf) by extensions ['ros']
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiangong2pro_urdf) by extension 'ros'
+[0.130s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tiangong2pro_urdf' with type 'ros.ament_cmake' and name 'tiangong2pro_urdf'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/tienkung_action) by extensions ['ignore', 'ignore_ament_install']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/tienkung_action) by extension 'ignore'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/tienkung_action) by extension 'ignore_ament_install'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/tienkung_action) by extensions ['colcon_pkg']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/tienkung_action) by extension 'colcon_pkg'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/tienkung_action) by extensions ['colcon_meta']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/tienkung_action) by extension 'colcon_meta'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/tienkung_action) by extensions ['ros']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/tienkung_action) by extension 'ros'
+[0.131s] DEBUG:colcon.colcon_core.package_identification:Failed to parse potential ROS package manifest in'src/tienkung_action': Error(s) in package 'src/tienkung_action/package.xml':
+Invalid email "soom@local" for person "soom"
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/tienkung_action) by extensions ['cmake', 'python']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/tienkung_action) by extension 'cmake'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/tienkung_action) by extension 'python'
+[0.132s] DEBUG:colcon.colcon_core.package_identification:Python package in 'src/tienkung_action' passes arguments to the setup() function which requires a different identification extension than 'python'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/tienkung_action) by extensions ['python_setup_py']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/tienkung_action) by extension 'python_setup_py'
+[0.296s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tienkung_action' with type 'python' and name 'tienkung_action'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(systemd) by extensions ['ignore', 'ignore_ament_install']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(systemd) by extension 'ignore'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(systemd) by extension 'ignore_ament_install'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(systemd) by extensions ['colcon_pkg']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(systemd) by extension 'colcon_pkg'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(systemd) by extensions ['colcon_meta']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(systemd) by extension 'colcon_meta'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(systemd) by extensions ['ros']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(systemd) by extension 'ros'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(systemd) by extensions ['cmake', 'python']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(systemd) by extension 'cmake'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(systemd) by extension 'python'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(systemd) by extensions ['python_setup_py']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(systemd) by extension 'python_setup_py'
+[0.297s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.297s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.297s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.297s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.297s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.313s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.313s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.314s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/yaojunqi/Desktop/motion_builder/other_install/bodyctrl_msgs' in the environment variable AMENT_PREFIX_PATH doesn't contain any 'local_setup.*' files.
+[0.314s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/yaojunqi/Desktop/motion_builder/other_install/lyre_msgs' in the environment variable AMENT_PREFIX_PATH doesn't contain any 'local_setup.*' files.
+[0.316s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 277 installed packages in /opt/ros/humble
+[0.317s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'sim_joy' build argument 'cmake_args' from command line to '['-DPython3_EXECUTABLE=/usr/bin/python3']'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'sim_joy' build argument 'cmake_target' from command line to 'None'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'sim_joy' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'sim_joy' build argument 'cmake_clean_cache' from command line to 'True'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'sim_joy' build argument 'cmake_clean_first' from command line to 'False'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'sim_joy' build argument 'cmake_force_configure' from command line to 'False'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'sim_joy' build argument 'ament_cmake_args' from command line to 'None'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'sim_joy' build argument 'catkin_cmake_args' from command line to 'None'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'sim_joy' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.343s] DEBUG:colcon.colcon_core.verb:Building package 'sim_joy' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yaojunqi/Desktop/motion_builder/build/sim_joy', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DPython3_EXECUTABLE=/usr/bin/python3'], 'cmake_clean_cache': True, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yaojunqi/Desktop/motion_builder/install/sim_joy', 'merge_install': False, 'path': '/home/yaojunqi/Desktop/motion_builder/src/sim_joy', 'symlink_install': False, 'test_result_base': None}
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'tiangong2pro_urdf' build argument 'cmake_args' from command line to '['-DPython3_EXECUTABLE=/usr/bin/python3']'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'tiangong2pro_urdf' build argument 'cmake_target' from command line to 'None'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'tiangong2pro_urdf' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'tiangong2pro_urdf' build argument 'cmake_clean_cache' from command line to 'True'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'tiangong2pro_urdf' build argument 'cmake_clean_first' from command line to 'False'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'tiangong2pro_urdf' build argument 'cmake_force_configure' from command line to 'False'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'tiangong2pro_urdf' build argument 'ament_cmake_args' from command line to 'None'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'tiangong2pro_urdf' build argument 'catkin_cmake_args' from command line to 'None'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'tiangong2pro_urdf' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.343s] DEBUG:colcon.colcon_core.verb:Building package 'tiangong2pro_urdf' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yaojunqi/Desktop/motion_builder/build/tiangong2pro_urdf', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DPython3_EXECUTABLE=/usr/bin/python3'], 'cmake_clean_cache': True, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf', 'merge_install': False, 'path': '/home/yaojunqi/Desktop/motion_builder/src/tiangong2pro_urdf', 'symlink_install': False, 'test_result_base': None}
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'tienkung_action' build argument 'cmake_args' from command line to '['-DPython3_EXECUTABLE=/usr/bin/python3']'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'tienkung_action' build argument 'cmake_target' from command line to 'None'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'tienkung_action' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'tienkung_action' build argument 'cmake_clean_cache' from command line to 'True'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'tienkung_action' build argument 'cmake_clean_first' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'tienkung_action' build argument 'cmake_force_configure' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'tienkung_action' build argument 'ament_cmake_args' from command line to 'None'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'tienkung_action' build argument 'catkin_cmake_args' from command line to 'None'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'tienkung_action' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.344s] DEBUG:colcon.colcon_core.verb:Building package 'tienkung_action' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yaojunqi/Desktop/motion_builder/build/tienkung_action', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DPython3_EXECUTABLE=/usr/bin/python3'], 'cmake_clean_cache': True, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yaojunqi/Desktop/motion_builder/install/tienkung_action', 'merge_install': False, 'path': '/home/yaojunqi/Desktop/motion_builder/src/tienkung_action', 'symlink_install': False, 'test_result_base': None}
+[0.344s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.345s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.345s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/yaojunqi/Desktop/motion_builder/src/sim_joy' with build type 'ament_python'
+[0.345s] Level 1:colcon.colcon_core.shell:create_environment_hook('sim_joy', 'ament_prefix_path')
+[0.347s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.347s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yaojunqi/Desktop/motion_builder/install/sim_joy/share/sim_joy/hook/ament_prefix_path.ps1'
+[0.348s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yaojunqi/Desktop/motion_builder/install/sim_joy/share/sim_joy/hook/ament_prefix_path.dsv'
+[0.348s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yaojunqi/Desktop/motion_builder/install/sim_joy/share/sim_joy/hook/ament_prefix_path.sh'
+[0.349s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.349s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.351s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/yaojunqi/Desktop/motion_builder/src/tiangong2pro_urdf' with build type 'ament_cmake'
+[0.351s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/yaojunqi/Desktop/motion_builder/src/tiangong2pro_urdf'
+[0.352s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.352s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.354s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/yaojunqi/Desktop/motion_builder/src/tienkung_action'
+[0.354s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.354s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.529s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/yaojunqi/Desktop/motion_builder/src/sim_joy'
+[0.529s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.529s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.535s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yaojunqi/Desktop/motion_builder/build/tiangong2pro_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yaojunqi/Desktop/motion_builder/other_install/bodyctrl_msgs:/home/yaojunqi/Desktop/motion_builder/other_install/lyre_msgs CONDA_PROMPT_MODIFIER=(base) /home/yaojunqi/miniconda3/bin/cmake /home/yaojunqi/Desktop/motion_builder/src/tiangong2pro_urdf -DPython3_EXECUTABLE=/usr/bin/python3 -DCMAKE_INSTALL_PREFIX=/home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf
+[1.097s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yaojunqi/Desktop/motion_builder/src/tienkung_action': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/yaojunqi/Desktop/motion_builder/build/tienkung_action/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yaojunqi/Desktop/motion_builder/install/tienkung_action/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tienkung_action build --build-base /home/yaojunqi/Desktop/motion_builder/build/tienkung_action/build install --record /home/yaojunqi/Desktop/motion_builder/build/tienkung_action/install.log --single-version-externally-managed install_data
+[1.119s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yaojunqi/Desktop/motion_builder/src/sim_joy': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/yaojunqi/Desktop/motion_builder/build/sim_joy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yaojunqi/Desktop/motion_builder/install/sim_joy/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/sim_joy build --build-base /home/yaojunqi/Desktop/motion_builder/build/sim_joy/build install --record /home/yaojunqi/Desktop/motion_builder/build/sim_joy/install.log --single-version-externally-managed install_data
+[1.311s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yaojunqi/Desktop/motion_builder/build/tiangong2pro_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yaojunqi/Desktop/motion_builder/other_install/bodyctrl_msgs:/home/yaojunqi/Desktop/motion_builder/other_install/lyre_msgs CONDA_PROMPT_MODIFIER=(base) /home/yaojunqi/miniconda3/bin/cmake /home/yaojunqi/Desktop/motion_builder/src/tiangong2pro_urdf -DPython3_EXECUTABLE=/usr/bin/python3 -DCMAKE_INSTALL_PREFIX=/home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf
+[1.313s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yaojunqi/Desktop/motion_builder/build/tiangong2pro_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yaojunqi/Desktop/motion_builder/other_install/bodyctrl_msgs:/home/yaojunqi/Desktop/motion_builder/other_install/lyre_msgs CONDA_PROMPT_MODIFIER=(base) /home/yaojunqi/miniconda3/bin/cmake --build /home/yaojunqi/Desktop/motion_builder/build/tiangong2pro_urdf -- -j32 -l32
+[1.430s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yaojunqi/Desktop/motion_builder/build/tiangong2pro_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yaojunqi/Desktop/motion_builder/other_install/bodyctrl_msgs:/home/yaojunqi/Desktop/motion_builder/other_install/lyre_msgs CONDA_PROMPT_MODIFIER=(base) /home/yaojunqi/miniconda3/bin/cmake --build /home/yaojunqi/Desktop/motion_builder/build/tiangong2pro_urdf -- -j32 -l32
+[1.534s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yaojunqi/Desktop/motion_builder/build/tiangong2pro_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yaojunqi/Desktop/motion_builder/other_install/bodyctrl_msgs:/home/yaojunqi/Desktop/motion_builder/other_install/lyre_msgs CONDA_PROMPT_MODIFIER=(base) /home/yaojunqi/miniconda3/bin/cmake --install /home/yaojunqi/Desktop/motion_builder/build/tiangong2pro_urdf
+[1.535s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yaojunqi/Desktop/motion_builder/src/sim_joy' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/yaojunqi/Desktop/motion_builder/build/sim_joy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yaojunqi/Desktop/motion_builder/install/sim_joy/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/sim_joy build --build-base /home/yaojunqi/Desktop/motion_builder/build/sim_joy/build install --record /home/yaojunqi/Desktop/motion_builder/build/sim_joy/install.log --single-version-externally-managed install_data
+[1.537s] Level 1:colcon.colcon_core.environment:checking '/home/yaojunqi/Desktop/motion_builder/install/sim_joy' for CMake module files
+[1.537s] Level 1:colcon.colcon_core.environment:checking '/home/yaojunqi/Desktop/motion_builder/install/sim_joy' for CMake config files
+[1.538s] Level 1:colcon.colcon_core.environment:checking '/home/yaojunqi/Desktop/motion_builder/install/sim_joy/lib'
+[1.538s] Level 1:colcon.colcon_core.environment:checking '/home/yaojunqi/Desktop/motion_builder/install/sim_joy/bin'
+[1.538s] Level 1:colcon.colcon_core.environment:checking '/home/yaojunqi/Desktop/motion_builder/install/sim_joy/lib/pkgconfig/sim_joy.pc'
+[1.538s] Level 1:colcon.colcon_core.environment:checking '/home/yaojunqi/Desktop/motion_builder/install/sim_joy/lib/python3.10/site-packages'
+[1.538s] Level 1:colcon.colcon_core.shell:create_environment_hook('sim_joy', 'pythonpath')
+[1.538s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yaojunqi/Desktop/motion_builder/install/sim_joy/share/sim_joy/hook/pythonpath.ps1'
+[1.539s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yaojunqi/Desktop/motion_builder/install/sim_joy/share/sim_joy/hook/pythonpath.dsv'
+[1.539s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yaojunqi/Desktop/motion_builder/install/sim_joy/share/sim_joy/hook/pythonpath.sh'
+[1.539s] Level 1:colcon.colcon_core.environment:checking '/home/yaojunqi/Desktop/motion_builder/install/sim_joy/bin'
+[1.540s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sim_joy)
+[1.540s] INFO:colcon.colcon_core.shell:Creating package script '/home/yaojunqi/Desktop/motion_builder/install/sim_joy/share/sim_joy/package.ps1'
+[1.541s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yaojunqi/Desktop/motion_builder/install/sim_joy/share/sim_joy/package.dsv'
+[1.541s] INFO:colcon.colcon_core.shell:Creating package script '/home/yaojunqi/Desktop/motion_builder/install/sim_joy/share/sim_joy/package.sh'
+[1.542s] INFO:colcon.colcon_core.shell:Creating package script '/home/yaojunqi/Desktop/motion_builder/install/sim_joy/share/sim_joy/package.bash'
+[1.542s] INFO:colcon.colcon_core.shell:Creating package script '/home/yaojunqi/Desktop/motion_builder/install/sim_joy/share/sim_joy/package.zsh'
+[1.543s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yaojunqi/Desktop/motion_builder/install/sim_joy/share/colcon-core/packages/sim_joy)
+[1.543s] Level 1:colcon.colcon_core.environment:checking '/home/yaojunqi/Desktop/motion_builder/install/tienkung_action' for CMake module files
+[1.544s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yaojunqi/Desktop/motion_builder/src/tienkung_action' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/yaojunqi/Desktop/motion_builder/build/tienkung_action/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yaojunqi/Desktop/motion_builder/install/tienkung_action/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tienkung_action build --build-base /home/yaojunqi/Desktop/motion_builder/build/tienkung_action/build install --record /home/yaojunqi/Desktop/motion_builder/build/tienkung_action/install.log --single-version-externally-managed install_data
+[1.544s] Level 1:colcon.colcon_core.environment:checking '/home/yaojunqi/Desktop/motion_builder/install/tienkung_action' for CMake config files
+[1.545s] Level 1:colcon.colcon_core.environment:checking '/home/yaojunqi/Desktop/motion_builder/install/tienkung_action/lib'
+[1.545s] Level 1:colcon.colcon_core.environment:checking '/home/yaojunqi/Desktop/motion_builder/install/tienkung_action/bin'
+[1.545s] Level 1:colcon.colcon_core.environment:checking '/home/yaojunqi/Desktop/motion_builder/install/tienkung_action/lib/pkgconfig/tienkung_action.pc'
+[1.545s] Level 1:colcon.colcon_core.environment:checking '/home/yaojunqi/Desktop/motion_builder/install/tienkung_action/lib/python3.10/site-packages'
+[1.545s] Level 1:colcon.colcon_core.shell:create_environment_hook('tienkung_action', 'pythonpath')
+[1.545s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yaojunqi/Desktop/motion_builder/install/tienkung_action/share/tienkung_action/hook/pythonpath.ps1'
+[1.546s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yaojunqi/Desktop/motion_builder/install/tienkung_action/share/tienkung_action/hook/pythonpath.dsv'
+[1.546s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yaojunqi/Desktop/motion_builder/install/tienkung_action/share/tienkung_action/hook/pythonpath.sh'
+[1.547s] Level 1:colcon.colcon_core.environment:checking '/home/yaojunqi/Desktop/motion_builder/install/tienkung_action/bin'
+[1.547s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tienkung_action)
+[1.547s] INFO:colcon.colcon_core.shell:Creating package script '/home/yaojunqi/Desktop/motion_builder/install/tienkung_action/share/tienkung_action/package.ps1'
+[1.547s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yaojunqi/Desktop/motion_builder/install/tienkung_action/share/tienkung_action/package.dsv'
+[1.547s] INFO:colcon.colcon_core.shell:Creating package script '/home/yaojunqi/Desktop/motion_builder/install/tienkung_action/share/tienkung_action/package.sh'
+[1.548s] INFO:colcon.colcon_core.shell:Creating package script '/home/yaojunqi/Desktop/motion_builder/install/tienkung_action/share/tienkung_action/package.bash'
+[1.548s] INFO:colcon.colcon_core.shell:Creating package script '/home/yaojunqi/Desktop/motion_builder/install/tienkung_action/share/tienkung_action/package.zsh'
+[1.548s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yaojunqi/Desktop/motion_builder/install/tienkung_action/share/colcon-core/packages/tienkung_action)
+[1.651s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tiangong2pro_urdf)
+[1.651s] Level 1:colcon.colcon_core.environment:checking '/home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf' for CMake module files
+[1.653s] Level 1:colcon.colcon_core.environment:checking '/home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf' for CMake config files
+[1.655s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yaojunqi/Desktop/motion_builder/build/tiangong2pro_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yaojunqi/Desktop/motion_builder/other_install/bodyctrl_msgs:/home/yaojunqi/Desktop/motion_builder/other_install/lyre_msgs CONDA_PROMPT_MODIFIER=(base) /home/yaojunqi/miniconda3/bin/cmake --install /home/yaojunqi/Desktop/motion_builder/build/tiangong2pro_urdf
+[1.655s] Level 1:colcon.colcon_core.shell:create_environment_hook('tiangong2pro_urdf', 'cmake_prefix_path')
+[1.655s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/hook/cmake_prefix_path.ps1'
+[1.655s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/hook/cmake_prefix_path.dsv'
+[1.656s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/hook/cmake_prefix_path.sh'
+[1.656s] Level 1:colcon.colcon_core.environment:checking '/home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/lib'
+[1.656s] Level 1:colcon.colcon_core.environment:checking '/home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/bin'
+[1.656s] Level 1:colcon.colcon_core.environment:checking '/home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/lib/pkgconfig/tiangong2pro_urdf.pc'
+[1.656s] Level 1:colcon.colcon_core.environment:checking '/home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/lib/python3.10/site-packages'
+[1.657s] Level 1:colcon.colcon_core.environment:checking '/home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/bin'
+[1.657s] INFO:colcon.colcon_core.shell:Creating package script '/home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/package.ps1'
+[1.657s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/package.dsv'
+[1.658s] INFO:colcon.colcon_core.shell:Creating package script '/home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/package.sh'
+[1.658s] INFO:colcon.colcon_core.shell:Creating package script '/home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/package.bash'
+[1.658s] INFO:colcon.colcon_core.shell:Creating package script '/home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/package.zsh'
+[1.658s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/colcon-core/packages/tiangong2pro_urdf)
+[1.659s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tiangong2pro_urdf)
+[1.659s] Level 1:colcon.colcon_core.environment:checking '/home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf' for CMake module files
+[1.659s] Level 1:colcon.colcon_core.environment:checking '/home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf' for CMake config files
+[1.660s] Level 1:colcon.colcon_core.shell:create_environment_hook('tiangong2pro_urdf', 'cmake_prefix_path')
+[1.660s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/hook/cmake_prefix_path.ps1'
+[1.660s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/hook/cmake_prefix_path.dsv'
+[1.661s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/hook/cmake_prefix_path.sh'
+[1.661s] Level 1:colcon.colcon_core.environment:checking '/home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/lib'
+[1.661s] Level 1:colcon.colcon_core.environment:checking '/home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/bin'
+[1.661s] Level 1:colcon.colcon_core.environment:checking '/home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/lib/pkgconfig/tiangong2pro_urdf.pc'
+[1.661s] Level 1:colcon.colcon_core.environment:checking '/home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/lib/python3.10/site-packages'
+[1.661s] Level 1:colcon.colcon_core.environment:checking '/home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/bin'
+[1.662s] INFO:colcon.colcon_core.shell:Creating package script '/home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/package.ps1'
+[1.662s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/package.dsv'
+[1.662s] INFO:colcon.colcon_core.shell:Creating package script '/home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/package.sh'
+[1.663s] INFO:colcon.colcon_core.shell:Creating package script '/home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/package.bash'
+[1.663s] INFO:colcon.colcon_core.shell:Creating package script '/home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/tiangong2pro_urdf/package.zsh'
+[1.663s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yaojunqi/Desktop/motion_builder/install/tiangong2pro_urdf/share/colcon-core/packages/tiangong2pro_urdf)
+[1.663s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.664s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.664s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.664s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.668s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.668s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.669s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.678s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.678s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yaojunqi/Desktop/motion_builder/install/local_setup.ps1'
+[1.679s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/yaojunqi/Desktop/motion_builder/install/_local_setup_util_ps1.py'
+[1.681s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yaojunqi/Desktop/motion_builder/install/setup.ps1'
+[1.682s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yaojunqi/Desktop/motion_builder/install/local_setup.sh'
+[1.682s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/yaojunqi/Desktop/motion_builder/install/_local_setup_util_sh.py'
+[1.683s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yaojunqi/Desktop/motion_builder/install/setup.sh'
+[1.684s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yaojunqi/Desktop/motion_builder/install/local_setup.bash'
+[1.685s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yaojunqi/Desktop/motion_builder/install/setup.bash'
+[1.696s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yaojunqi/Desktop/motion_builder/install/local_setup.zsh'
+[1.696s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yaojunqi/Desktop/motion_builder/install/setup.zsh'

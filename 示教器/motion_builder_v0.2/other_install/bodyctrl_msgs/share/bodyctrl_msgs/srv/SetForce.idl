@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from bodyctrl_msgs/srv/SetForce.srv
+// generated code does not contain a copyright notice
+
+
+module bodyctrl_msgs {
+  module srv {
+    struct SetForce_Request {
+      float force0_ratio;
+
+      float force1_ratio;
+
+      float force2_ratio;
+
+      float force3_ratio;
+
+      float force4_ratio;
+
+      float force5_ratio;
+    };
+    struct SetForce_Response {
+      boolean force_accepted;
+    };
+  };
+};

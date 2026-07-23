@@ -1,0 +1,54 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from lyre_msgs/srv/PlayFile.srv
+// generated code does not contain a copyright notice
+
+
+module lyre_msgs {
+  module srv {
+    module PlayFile_Request_Constants {
+      const string SERVICE_NAME = "/audio_play/play_file";
+    };
+    @verbatim (language="comment", text=
+      "lyre_msgs/srv/PlayFile.srv" "\n"
+      "以本地文件的形式播放一段语音。")
+    struct PlayFile_Request {
+      @verbatim (language="comment", text=
+        "Stream identifier (unique per audio stream).")
+      string sid;
+
+      @verbatim (language="comment", text=
+        "Sequence number (incremental per packet).")
+      uint32 seq;
+
+      @verbatim (language="comment", text=
+        "Last flag (true if this is the final packet).")
+      boolean last;
+
+      @verbatim (language="comment", text=
+        "Force playback (stop all running tasks and play immediately).")
+      boolean force;
+
+      @verbatim (language="comment", text=
+        "Absolute path to the audio file in the local file system.")
+      string path;
+    };
+    module PlayFile_Response_Constants {
+      const int8 CODE_OK = 0;
+      const int8 CODE_INVALID_PARAMS = 1;
+      const int8 CODE_FAILED = -1;
+    };
+    struct PlayFile_Response {
+      @verbatim (language="comment", text=
+        "Playback stream ID (generated internally if absent).")
+      string sid;
+
+      @verbatim (language="comment", text=
+        "Status code.")
+      int8 code;
+
+      @verbatim (language="comment", text=
+        "Human-readable status message.")
+      string message;
+    };
+  };
+};

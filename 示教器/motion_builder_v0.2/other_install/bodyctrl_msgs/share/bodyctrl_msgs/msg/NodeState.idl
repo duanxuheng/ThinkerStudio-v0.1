@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from bodyctrl_msgs/msg/NodeState.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module bodyctrl_msgs {
+  module msg {
+    module NodeState_Constants {
+      const uint16 NODE_STATE_IDLE = 0;
+      const uint16 NODE_STATE_RUNNING = 1;
+    };
+    struct NodeState {
+      std_msgs::msg::Header header;
+
+      string topic;
+
+      uint16 state;
+    };
+  };
+};
