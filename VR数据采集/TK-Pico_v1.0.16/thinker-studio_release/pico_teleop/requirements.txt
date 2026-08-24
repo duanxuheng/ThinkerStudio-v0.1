@@ -1,5 +1,0 @@
-# Core dependencies for TWIST2
-numpy>=1.23.0
-redis[hiredis]>=4.0.0
-rich>=13.0.0
-mujoco>=2.3.0
